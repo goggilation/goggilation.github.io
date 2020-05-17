@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleksander Djordjevic Portfolio</title>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .all {
+        font-size: 0;
+        /*remove white space*/
+        height: 100vh;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .page {
+        font-size: 16px;
+        /*reset font size*/
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .page:nth-child(1) {
+        background: pink;
+    }
+
+    .page:nth-child(2) {
+        background: lightgreen;
+    }
+
+    .page:nth-child(3) {
+        background: gold;
+    }
+</style>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+
+</html>
