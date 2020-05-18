@@ -22,9 +22,9 @@ function FullPage() {
         <>
             <div onClick={ClickMe} id="HelloClick">Hello</div>
             <div className="all" id="all">
-                <PortfolioItem title="Page 1" id="1" img=""/>
-                <PortfolioItem title="Page 2" id="2" img=""/>
-                <PortfolioItem title="Page 3" id="3" img=""/>
+                <PortfolioItem title="Page 1" id="1" img="../src/imgs/mh.jpg"/>
+                <PortfolioItem title="Page 2" id="2" img="../src/imgs/hopl_small.png"/>
+                <PortfolioItem title="Page 3" id="3" img="../src/imgs/hopl.png"/>
             </div>
         </>
     );

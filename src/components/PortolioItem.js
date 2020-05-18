@@ -8,9 +8,8 @@ function PortfolioItem(props) {
         
     return (
         <>
-           <div id={id} className="page">
+           <div style={{background: 'url('+ img + ')'}} id={id} className="page">
                <h1>{title}</h1>
-               <img src={img}></img>
             </div>
         </>
     );
