@@ -19,11 +19,14 @@
   },
   "homepage": "https://github.com/goggilation/my-portfolio#readme",
   "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "style-loader": "^1.2.1",
+    "styled-components": "^5.1.0",
     "url-loader": "^4.1.0"
   },
   "devDependencies": {

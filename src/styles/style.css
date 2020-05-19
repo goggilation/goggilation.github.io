@@ -1,0 +1,56 @@
+html,
+    body {
+        height: 100%;
+        margin: 0;
+        color: white;
+        font-family: 'Open Sans';
+    }
+
+    .all {
+        font-size: 0;
+        /*remove white space*/
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .page {
+        font-size: 16px;
+        position: relative;
+        /*reset font size*/
+        height: 100%;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        background-size: cover !important;
+    }
+
+    .content-box{
+        position: absolute;
+        top: 40vh;
+        max-width: 410px;
+        display: block;
+        padding: 20px;
+        white-space: pre-wrap;
+        margin: 8px;
+        width: auto;
+        text-align: center;
+    }
+
+    .content-box p{
+        white-space: pre-wrap;
+    }
+
+    .page:nth-child(1) {
+        background: pink;
+    }
+
+    .page:nth-child(2) {
+        background: lightgreen;
+    }
+
+    .page:nth-child(3) {
+        background: gold;
+    }
