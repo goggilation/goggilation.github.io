@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button'
 
-function PortfolioItem(props) {
+const PortfolioItem = (props) => {
 
     var title = props.title;
     var img = props.img;

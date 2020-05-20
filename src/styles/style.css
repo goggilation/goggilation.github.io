@@ -15,6 +15,33 @@ html,
         white-space: nowrap;
     }
 
+    .navigation{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        position: absolute;
+        z-index: 9999;
+        top: 95vh;
+    }
+
+    .navigation-button {
+        cursor: pointer;
+        width: 8px;
+        height: 8px;
+        background: white;
+        margin: 8px;
+        flex-direction: row;
+        border-radius: 50%;
+        opacity: .36;
+    }
+
+    .navigation-button.active{
+        opacity: 70%;
+        border: 1px solid yellow;
+    }
+
     .page {
         font-size: 16px;
         position: relative;

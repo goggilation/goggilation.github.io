@@ -1,48 +1,32 @@
 import React, { useState, useRef } from 'react';
 import PortfolioItem from './PortolioItem';
-import { musikhjalpen, description2, description3 } from '../content/descriptions'
+import Work from '../content/descriptions'
+import Navigation from './Navigation';
 
-var i = 0;
-
-
-
-function ClickMe(){
-    var scrollWidth = document.getElementById('1').scrollWidth;
-    var all = document.getElementById('all');
-    console.log(scrollWidth);
-    i++;
-    if(i >= 3){
-        i = 0;
-        all.scrollBy({ left: -scrollWidth * 2, behavior: 'smooth' });
-    }else{
-        all.scrollBy({ left: scrollWidth, behavior: 'smooth' });
-    }
-};
-
-function FullPage() {
-    
+const FullPage = () => {
+    const numOfPages = [1, 2, 3];
     return (
         <>
-            <div onClick={ClickMe} id="HelloClick">Hello</div>
+            <Navigation/>
             <div className="all" id="all">
                 <PortfolioItem 
-                    title="Musikhjälpen"
-                    subtitle="Sveriges Radio"
-                    description={musikhjalpen}
+                    title={Work.Musikhjalpen.title}
+                    subtitle={Work.Musikhjalpen.contractor}
+                    description={Work.Musikhjalpen.description}
                     id="1"
                     img="../src/imgs/mh.jpg"/>
 
                 <PortfolioItem
-                    title="Page 2"
-                    subtitle="Sveriges Radio"
-                    description={description2}
+                    title={Work.CGI.title}
+                    subtitle={Work.CGI.contractor}
+                    description={Work.CGI.description}
                     id="2"
                     img="../src/imgs/hopl_small.png"/>
 
                 <PortfolioItem
-                    title="Page 3"
-                    subtitle="Sveriges Radio"
-                    description={description3}
+                    title={Work.Volvo.title}
+                    subtitle={Work.Volvo.contractor}
+                    description={Work.Volvo.description}
                     id="3"
                     img="../src/imgs/hopl.png"/>
             </div>

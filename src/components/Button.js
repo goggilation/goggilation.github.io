@@ -27,7 +27,7 @@ const StyledButton = styled.div`
     }
 `
 
-function Button(){
+const Button = () => {
     return(
         <StyledButton>Read More <ArrowForwardIcon/></StyledButton>
     );
