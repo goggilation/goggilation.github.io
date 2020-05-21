@@ -28,8 +28,8 @@ const StyledButton = styled.div`
 `
 
 const Button = () => {
-    return(
-        <StyledButton>Read More <ArrowForwardIcon/></StyledButton>
+    return (
+        <StyledButton>Read More <ArrowForwardIcon /></StyledButton>
     );
 }
 
