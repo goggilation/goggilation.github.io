@@ -3,19 +3,19 @@ const PortfolioDescriptions = {
         title: 'Musikhjälpen',
         contractor: 'Sveriges Radio',
         description: "Funkar detta?",
-        img: '../src/imgs/mh.jpg'
+        img: '../src/content/imgs/mh.jpg'
     },
     CGI: {
         title: 'CGI',
         contractor: 'Sveriges Radio',
         description: "Funkar detta?",
-        img: '../src/imgs/hopl_small.png'
+        img: '../src/content/imgs/hopl_small.png'
     },
     Volvo: {
         title: 'Volvo',
         contractor: 'Sveriges Radio',
         description: "Funkar detta?",
-        img: '../src/imgs/hopl.png'
+        img: '../src/content/imgs/hopl.png'
     },
 }
 
