@@ -1,11 +1,23 @@
 import React, { useState } from 'react';
 import Button from './Button'
+import { Link } from 'react-router-dom';
+
+const ConvertIdToPage = (id) => {
+    switch(id){
+        case 0:
+            return "/detail";
+        case 1:
+            return "/about"
+        default:
+            return "/404";
+    }
+};
 
 const PortfolioItem = (props) => {
 
     var title = props.title;
     var img = props.img;
-    var id = props.id;
+    var id = ConvertIdToPage(props.id);
     var subtitle = props.subtitle;
     var description = props.description;
 
@@ -16,7 +28,7 @@ const PortfolioItem = (props) => {
                     <h1>{title}</h1>
                     <h2>{subtitle}</h2>
                     <p>{description}</p>
-                    <Button />
+                    <Link to={id}><Button /></Link>
                 </div>
             </div>
         </>

@@ -1,4 +1,22 @@
 import React from 'react';
-import FullPage from './Start';
+import Start from './Start';
+import PortfolioItemDetail from './PortfolioItemDetail';
 
-export default () => <FullPage/>;
+import { 
+    HashRouter as Router,
+    Switch,
+    Route
+} from 'react-router-dom';
+
+const App = () => {
+    return(
+        <Router>
+            <div>
+                <Route exact path="/" component={Start} />
+                <Route path="/detail" render={(props) => <PortfolioItemDetail {...props} title="Test" />}/>
+            </div>
+        </Router>
+        )
+    };
+
+export default () => <App/>;
