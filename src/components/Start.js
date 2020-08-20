@@ -5,11 +5,13 @@ import { Grid } from '@material-ui/core';
 import TextBlock from './TextBlock';
 import ItemGrid from './ItemGrid';
 
+document.body.classList.remove('single');
+
 const Start = () => {
     return (
         <>
             <div>
-                <Navigation />
+                <Navigation logo={true}/>
                 <TextBlock 
                     justify='center'
                     textType='large-paragraph centered'

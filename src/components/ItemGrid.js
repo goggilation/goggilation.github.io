@@ -14,18 +14,22 @@ const ItemGrid = (props) => {
                 alignItems={props.alignItems}
                 >
                     <Item
+                        link="/detail?mobile_app1"
                         title="Mobile Application"
                         img="../src/content/imgs/fixed/placeholder.png"
                     />
                     <Item
+                        link="/detail?mobile_app2"
                         title="Mobile Application"
                         img="../src/content/imgs/fixed/placeholder.png"
                     />
                     <Item
+                        link="/detail?mobile_app3"
                         title="Mobile Application"
                         img="../src/content/imgs/fixed/placeholder.png"
                     />
                     <Item
+                        link="/detail?mobile_app4"
                         title="Mobile Application"
                         img="../src/content/imgs/fixed/placeholder.png"
                     />

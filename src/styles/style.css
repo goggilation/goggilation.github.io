@@ -4,7 +4,17 @@ Background: #FDA6C9
 Coral Black: #2C2728
 */
 
-
+a{
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
 
 body {
