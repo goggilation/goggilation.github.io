@@ -1,35 +1,48 @@
 import React from 'react';
 import styled from 'styled-components';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 const StyledButton = styled.div`
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 36px;
-    color: white;
-    background: red;
-    font-size: 14px;
-    font-weight: 400;
-    margin: 0 1em;
-    padding: .4em 16px;
-    transition: 0.5s all ease-out;
+cursor: pointer;
 
-    .MuiSvgIcon-root{
-        margin-left: 8px;
-    }
+font-family: 'Kanit';
+font-weight: 700;
+font-style: italic;
+font-size: 16px;
+color: #2C2728;
+
+display: inline-flex;
+align-items: center;
+justify-content: center;
+height: 48px;
+padding: 0 8px;
+border-radius: 9px;
+
+background: #F2F2F2;
+box-shadow: -5px 6px 0px 0px black;
+
+
+transition: 0.1s all;
 
     
     &:hover {
-        background-color: darkred;
-        color: white;
+        box-shadow: -2px 4px 0px 0px black;
+        transform: translate(-2px, 4px);
     }
 `
 
-const Button = () => {
+const CheckForIcon = (iconProp) => {
+    let icon = <MailIcon/>
+
+    if(iconProp != 'Mail') icon = <WorkIcon/>
+
+    return icon;
+}
+
+const Button = (props) => {
+    var title = props.title;
+
     return (
-        <StyledButton>Read More <ArrowForwardIcon /></StyledButton>
+            <StyledButton className='nav-button'>{props.icon} {title}</StyledButton>
     );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Start from './Start';
-import PortfolioItemDetail from './PortfolioItemDetail';
+import PortfolioItemDetail from './First Attempt/PortfolioItemDetail';
 
 import { 
     HashRouter as Router,
@@ -10,12 +10,7 @@ import {
 
 const App = () => {
     return(
-        <Router>
-            <div>
-                <Route exact path="/" component={Start} />
-                <Route path="/detail" render={(props) => <PortfolioItemDetail {...props} title="Test" />}/>
-            </div>
-        </Router>
+        <Start/>
         )
     };
 

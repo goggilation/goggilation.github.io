@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Button from './Button';
+import Button from '../Button';
 import { Link } from 'react-router-dom';
 
 const PortfolioItemDetail = (props) => {
