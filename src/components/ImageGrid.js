@@ -1,22 +1,24 @@
 import React, { useState, useRef } from "react";
 import Grid from "@material-ui/core/Grid";
+import Image from "./Image";
 
-const TextBlock = (props) => {
+const ImageGrid = (props) => {
   return (
     <>
       <Grid
+        className="item-grid"
         container
         justify={props.justify}
         spacing={props.spacing}
         direction={props.direction}
         alignItems={props.alignItems}
       >
-        <Grid item className="text-box">
-          <p className={props.textType}>{props.text}</p>
-        </Grid>
+        {Object.keys(props.imgs).map((img, index) => {
+          return <Image key={index} img={props.imgs[img]} />;
+        })}
       </Grid>
     </>
   );
 };
 
-export default TextBlock;
+export default ImageGrid;
