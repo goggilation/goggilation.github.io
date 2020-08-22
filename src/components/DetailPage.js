@@ -21,6 +21,7 @@ const getCurrentPage = () => {
 const DetailPage = () => {
   console.log(ContentStructure);
   document.body.classList.add("single");
+  window.scrollTo(0,0);
   return (
     <>
       <div>
@@ -35,7 +36,7 @@ const DetailPage = () => {
         />
         <ImageGrid
           justify="center"
-          spacing={4}
+          spacing={3}
           imgs={ContentStructure[getCurrentPage()].imgs}
         />
       </div>

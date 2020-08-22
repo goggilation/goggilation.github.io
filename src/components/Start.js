@@ -23,7 +23,7 @@ const Start = () => {
         <Grid container justify="center">
           <Confetti name="divider" confetti="jigsaw-2" />
         </Grid>
-        <ItemGrid justify="space-between" spacing={2} />
+        <ItemGrid justify="space-around" spacing={2} />
       </div>
     </>
   );

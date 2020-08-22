@@ -7,7 +7,7 @@ const Item = (props) => {
   return (
     <>
       <Router>
-        <Grid item className="item" xs={10} sm={4} m={3} lg={2}>
+        <Grid item className="item" xs={10} sm={4} m={3} lg={3}>
           <Link to={props.link}>
             <div className="item-title">
               <p className="subtitle2">{props.title}</p>
