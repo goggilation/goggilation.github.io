@@ -19,6 +19,7 @@ a {
 body {
   height: 100%;
   background-color: #fda6c9;
+  background-image: url('src/content/bg/confetti.png');
   color: #2c2728;
   font-family: "Kanit";
 }
@@ -54,9 +55,10 @@ nav {
 }
 
 .item-title {
+  background: url('content/imgs/fixed/item-title-bg.png');
   padding: 11px;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .item-img img {
@@ -81,9 +83,7 @@ h6 {
 /*Font System*/
 h1 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 700;
-  font-style: italic;
+  font-family: "Kanit-BoldItalic";
   font-size: 96px;
 
   letter-spacing: -1.5px;
@@ -91,9 +91,7 @@ h1 {
 }
 h2 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 600;
-  font-style: italic;
+  font-family: "Kanit-SemiBoldItalic";
   font-size: 60px;
 
   letter-spacing: -0.5px;
@@ -101,16 +99,14 @@ h2 {
 }
 h3 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 600;
+  font-family: "Kanit-SemiBold";
   font-size: 48px;
 
   text-align: left;
 }
 h4 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-family: "Kanit-Regular";
   font-size: 34px;
 
   letter-spacing: 0.25px;
@@ -118,16 +114,12 @@ h4 {
 }
 h5 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 600;
-  font-style: italic;
+  font-family: "Kanit-SemiBoldItalic";
   font-size: 24px;
 }
 h6 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 500;
-  font-style: italic;
+  font-family: "Kanit-MediumItalic";
   font-size: 20px;
 
   letter-spacing: 0.15px;
@@ -135,8 +127,7 @@ h6 {
 .subtitle1 {
     margin: 8px;
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-family: "Kanit-Regular";
   font-size: 16px;
 
   letter-spacing: 0.15px;
@@ -146,8 +137,7 @@ h6 {
 .subtitle2 {
     margin: 8px;
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 500;
+  font-family: "Kanit-Medium";
   font-size: 14px;
 
   letter-spacing: 0.1px;
@@ -155,8 +145,7 @@ h6 {
   line-height: 24px;
 }
 p {
-  font-family: "Kanit";
-  font-weight: 400;
+  font-family: "Kanit-Regular";
   font-size: 16px;
 
   letter-spacing: 0.44px;
@@ -164,8 +153,7 @@ p {
 }
 .p-2 {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-family: "Kanit-Regular";
   font-size: 14px;
 
   letter-spacing: 0.25px;
@@ -174,16 +162,14 @@ p {
 }
 .button {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 500;
+  font-family: "Kanit-Medium";
   font-size: 14px;
 
   letter-spacing: 1.35px;
 }
 .caption {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-family: "Kanit-Regular";
   font-size: 12px;
 
   letter-spacing: 0.4px;
@@ -192,8 +178,7 @@ p {
 }
 .overline {
   opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 500;
+  font-family: "Kanit-Medium";
   font-size: 10px;
 
   letter-spacing: 1.5px;

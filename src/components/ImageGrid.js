@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Image from "./Image";
 
 const ImageGrid = (props) => {
+
   return (
     <>
       <Grid

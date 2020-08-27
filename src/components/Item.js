@@ -9,7 +9,7 @@ const Item = (props) => {
       <Router>
         <Grid item className="item" xs={10} sm={4} m={3} lg={3}>
           <Link to={props.link}>
-            <div className="item-title">
+            <div className="item-title" style={{background: "url(src/content/imgs/fixed/item-title-bg.png)"}}>
               <p className="subtitle2">{props.title}</p>
             </div>
             <div className="item-img">

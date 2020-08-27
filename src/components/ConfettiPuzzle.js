@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const confettiPath = "../src/content/imgs/fixed/confetti/";
+const confettiPath = "src/content/imgs/fixed/confetti/";
 
 const Confetti = (props) => {
     let confetti = confettiPath + props.confetti + ".png";

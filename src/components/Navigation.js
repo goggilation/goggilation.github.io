@@ -23,7 +23,7 @@ const Navigation = (props) => {
             alignItems="center"
           >
             <Grid item>
-              <a href="http://localhost:1337/">
+              <a href="http://dev.aleksanderd.se/portfolio-react">
                 <Button title="Work" icon={<WorkIcon />} />
               </a>
             </Grid>

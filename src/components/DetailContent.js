@@ -6,9 +6,9 @@ const ContentStructure = {
     Description:
     "Under min tid på CGI har jag jobbat som UX-designer och utvecklare på Göteborgs Stads biblioteksapp.",
     imgs: {
-        1: "../src/content/imgs/library_app/front.jpg",
-        2: "../src/content/imgs/library_app/bibapp-previews-web-1024x364.png",
-        3: "../src/content/imgs/library_app/hitta-genre-bibapp-515x1024.png",
+        1: "src/content/imgs/library_app/front.jpg",
+        2: "src/content/imgs/library_app/bibapp-previews-web-1024x364.png",
+        3: "src/content/imgs/library_app/hitta-genre-bibapp-515x1024.png",
     },
   },
   big_sur_icons: {
@@ -16,9 +16,8 @@ const ContentStructure = {
     Description:
     "When Apple announced Big Sur and their new approach to the icons I got really inspired. So inspired that I created my own custom dock iconset.",
     imgs: {
-        1: "../src/content/imgs/library_app/front.jpg",
-        2: "../src/content/imgs/library_app/bibapp-previews-web-1024x364.png",
-        3: "../src/content/imgs/library_app/hitta-genre-bibapp-515x1024.png",
+        1: "https://static.dribbble.com/users/2064310/screenshots/13805408/media/56c2fe3514c004f9cb501a499fc36907.png",
+        2: "https://static.dribbble.com/users/2064310/screenshots/13931099/media/87d19356ba4f3efbdcdb31213abbd136.png",
     },
   },
   ui_playground: {

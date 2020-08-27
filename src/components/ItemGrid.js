@@ -21,7 +21,7 @@ const ItemGrid = (props) => {
         <Item
           link="/detail?lib_app"
           title="Gothenburg Library App"
-          img="../src/content/imgs/library_app/front.jpg"
+          img="src/content/imgs/library_app/front.jpg"
         />
         <Item
           link="/detail?ui_playground"
