@@ -1,250 +1,207 @@
-/*
-Colors:
-Background: #FDA6C9
-Coral Black: #2C2728
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
-a {
-  color: inherit;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap");
+
+:root{
+  flex-grow: 1;
+  --main-bg-color: #282828;
+  --main-text-darkmode: rgba(255,255,255,.92);
 }
 
 body {
-  height: 100%;
-  background-color: #fda6c9;
-  color: #2c2728;
-  font-family: "Kanit";
+  font-family: "Poppins";
+  background: var(--main-bg-color);
+  color: var(--main-text-darkmode);
+  margin: 0;
+  width: 100vw;
 }
 
-body.single {
-  background-color: #6236ff;
-  color: #f2f2f2 !important;
+a{
+  color: var(--main-text-darkmode);
+  text-decoration: none;
 }
 
-nav {
-  max-width: 1440px;
-  margin: 24px auto;
+.wrapper{
+  margin: 16px;
 }
 
-.nav-grid {
-  text-align: center;
+@media only screen and (min-width: 600px) {
+  .wrapper{
+    margin: 24px;
+  }
+  nav{
+    margin-top: 24px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .nav-grid{
+    justify-content: center !important;
+    max-width: 1032px;
+    margin: 0 auto !important;
+  }
 }
 
-.nav-button .MuiSvgIcon-root {
-  margin-right: 12px;
-}
-
-.logo-flex img {
-  transform: translateY(12px);
-  width: 100%;
-  max-width: 350px;
-}
-
-.item-grid {
-  max-width: 1440px;
-  margin-top: 24px;
-  margin: 24px auto !important;
-}
-
-.item-title {
-  padding: 11px;
-  background-size: contain !important;
-  background-repeat: no-repeat !important;
-}
-
-.item-img img {
-  width: 100%;
-}
-
-/*CONFETTI*/
-.divider-confetti {
-  width: 224px;
-  height: 24px;
-}
-
-/*TextBLocks*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: inherit;
-}
-/*Font System*/
+/*
+TYPE STYLES
+*/
 h1 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 700;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 800;
   font-size: 96px;
+  line-height: 104px;
+  /* or 108% */
 
-  letter-spacing: -1.5px;
-  text-align: left;
+  letter-spacing: -0.015em;
 }
 h2 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 600;
-  font-style: italic;
+  font-style: normal;
+  font-weight: bold;
   font-size: 60px;
+  line-height: 64px;
+  /* or 107% */
 
-  letter-spacing: -0.5px;
-  text-align: left;
+  letter-spacing: -0.005em;
 }
 h3 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 600;
+  font-style: normal;
+  font-weight: 900;
   font-size: 48px;
-
-  text-align: left;
+  line-height: 56px;
+  /* identical to box height, or 117% */
 }
 h4 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 800;
   font-size: 34px;
+  line-height: 44px;
+  /* or 129% */
 
-  letter-spacing: 0.25px;
-  text-align: left;
+  letter-spacing: 0.0025em;
 }
 h5 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 600;
-  font-style: italic;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
+  line-height: 32px;
+  /* or 133% */
 }
 h6 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 500;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 300;
   font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
 
-  letter-spacing: 0.15px;
+  letter-spacing: 0.0015em;
 }
 .subtitle1 {
-    margin: 8px;
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
-
-  letter-spacing: 0.15px;
-  text-align: left;
   line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.0015em;
 }
 .subtitle2 {
-    margin: 8px;
-  opacity: 0.87;
-  font-family: "Kanit";
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-
-  letter-spacing: 0.1px;
-  text-align: left;
   line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.001em;
 }
-p {
-  font-family: "Kanit";
-  font-weight: 400;
+.body1 {
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
-  letter-spacing: 0.44px;
-  line-height: 19px;
+  letter-spacing: 0.005em;
 }
-.p-2 {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+.body2 {
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
 
-  letter-spacing: 0.25px;
-  text-align: left;
-  line-height: 20px;
+  letter-spacing: 0.0025em;
 }
 .button {
-  opacity: 0.87;
-  font-family: "Kanit";
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
 
-  letter-spacing: 1.35px;
+  letter-spacing: 0.0125em;
+  text-transform: uppercase;
 }
 .caption {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 400;
+  font-style: normal;
+  font-weight: normal;
   font-size: 12px;
-
-  letter-spacing: 0.4px;
-  text-align: left;
   line-height: 16px;
+  /* or 133% */
+
+  letter-spacing: 0.004em;
 }
 .overline {
-  opacity: 0.87;
-  font-family: "Kanit";
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
   font-size: 10px;
-
-  letter-spacing: 1.5px;
   line-height: 16px;
-}
+  /* or 160% */
 
-.text-box {
-  max-width: 540px;
-}
-.paragraph {
-  line-height: 1.5em;
-}
-.large-paragraph {
-  line-height: 2em;
-}
-.centered {
-  text-align: center;
-}
-
-@media only screen and (max-width: 1440px) {
-  .item-grid {
-    margin: 32px 0;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  nav {
-    margin: 24px 24px;
-  }
-
-  .item-grid {
-    margin: 24px 0 !important;
-  }
-}
-@media only screen and (max-width: 600px) {
-  nav {
-    margin: 24px 16px;
-  }
-  .nav-grid {
-    justify-content: space-between !important;
-  }
-  .logo-flex {
-    order: 2;
-    padding-top: 24px;
-    width: 100%;
-  }
-
-  .logo-flex img {
-    max-width: none;
-  }
-
-  .item-grid {
-    justify-content: center !important;
-  }
+  letter-spacing: 0.015em;
 }

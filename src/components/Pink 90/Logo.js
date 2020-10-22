@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react';
 
-const Logo = (props) => {
+const Logo = () => {
     return (
         <>
-            <img src={"src/images/logo/Transparent_" + props.size + ".png"} />
+            <img src="src/content/imgs/fixed/logo/Eclectic.png" />
         </>
     );
 }
