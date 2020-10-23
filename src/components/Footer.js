@@ -12,7 +12,7 @@ const Footer = () => {
     const classes = useStyles();
   return (
     <div className={classes.text}>
-        <span class="caption">©Aleksander Djordjevic 2020</span>
+        <span className="caption">©Aleksander Djordjevic 2020</span>
     </div>
   );
 };

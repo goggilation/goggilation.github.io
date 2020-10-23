@@ -40,19 +40,19 @@ const Start = () => {
           <h6 className={classes.skillHeader}>Work</h6>
           <Grid container spacing={4}>
             <Card
-            image="/src/images/skills/volvo.jpg"
+            image="./src/images/skills/volvo.jpg"
               overline="Current"
               subtitle1="UI Designer"
               subtitle2="Volvo Group"
             />
             <Card
-            image="/src/images/skills/cgi.png"
+            image="./src/images/skills/cgi.png"
               overline="2017-2020"
               subtitle1="UX Design Consultant"
               subtitle2="CGI"
             />
             <Card
-            image="/src/images/skills/sr.png"
+            image="./src/images/skills/sr.png"
               overline="2015-2017"
               subtitle1="Graphic Designer"
               subtitle2="Swedish National Radio"

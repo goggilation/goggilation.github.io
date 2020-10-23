@@ -1,0 +1,13 @@
+{
+  "FeedItems": [
+    {
+      "0": {
+        "img": "src/content/imgs/mh.jpg",
+        "projectName": "Volvo Connect",
+        "clientName": "Volvo Group",
+        "description": "Funkar detta?",
+        "ctaText": "Open in dribbble"
+      }
+    }
+  ]
+}

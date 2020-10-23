@@ -26,9 +26,9 @@ const Navigation = (props) => {
           </Grid>
         </Grid>
         <Grid container spacing={3} justify="flex-end" xs={10}>
-          <Grid item><Link to="/"><span class="body2">Me</span></Link></Grid>
-            <Grid item><Link to="/feed"><span class="body2">Feed</span></Link></Grid>
-          <Grid item><Link to="/contact"><span class="body2">Contact</span></Link></Grid>
+          <Grid item><Link to="/"><span className="body2">Me</span></Link></Grid>
+            <Grid item><Link to="/feed"><span className="body2">Feed</span></Link></Grid>
+          <Grid item><Link to="/contact"><span className="body2">Contact</span></Link></Grid>
         </Grid>
       </Grid>
     </div>
