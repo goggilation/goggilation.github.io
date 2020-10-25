@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Start = () => {
   const classes = useStyles();
-  const theme = useTheme();
   return (
     <>
       <Grid container spacing={4} direction="column">

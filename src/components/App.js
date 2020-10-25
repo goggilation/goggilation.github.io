@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/style.css';
 import Start from "./Start";
-import Feed from "./Feed";
+import FeedStart from "./FeedStart";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Navigation from "./Navigation";
@@ -30,7 +30,7 @@ const App = () => {
       <Navigation/>
       <Switch>
         <Route exact path="/" component={Start} />
-        <Route path="/feed" render={Feed} />
+        <Route path="/feed" render={FeedStart} />
         <Route path="/contact" render={Contact} />
     </Switch>
     <Footer/>

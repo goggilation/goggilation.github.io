@@ -1,13 +1,39 @@
 {
   "FeedItems": [
-    {
-      "0": {
-        "img": "src/content/imgs/mh.jpg",
+      {
+        "img": "./src/content/imgs/mh.jpg",
+        "projectName": "Volvo Connect",
+        "clientName": "Volvo Group",
+        "description": "Tootsie roll tootsie roll biscuit cupcake. Dessert oat cake cookie wafer lollipop muffin caramels caramels. Tiramisu cotton candy jelly beans candy canes.",
+        "ctaText": "Open in dribbble"
+      },
+      {
+        "img": "./src/content/imgs/mh.jpg",
+        "projectName": "Volvo Connect",
+        "clientName": "Volvo Group",
+        "description": "Funkar detta?",
+        "ctaText": "Open in dribbble"
+      },
+      {
+        "img": "./src/content/imgs/mh.jpg",
+        "projectName": "Volvo Connect",
+        "clientName": "Volvo Group",
+        "description": "Funkar detta?",
+        "ctaText": "Open in dribbble"
+      },
+      {
+        "img": "./src/content/imgs/mh.jpg",
+        "projectName": "Volvo Connect",
+        "clientName": "Volvo Group",
+        "description": "Funkar detta?",
+        "ctaText": "Open in dribbble"
+      },
+      {
+        "img": "./src/content/imgs/mh.jpg",
         "projectName": "Volvo Connect",
         "clientName": "Volvo Group",
         "description": "Funkar detta?",
         "ctaText": "Open in dribbble"
       }
-    }
   ]
 }
