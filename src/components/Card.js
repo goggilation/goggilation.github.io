@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 const Card = (props) => {
   const classes = useStyles();
   let imageClass = "img";
-  const showImage = (textOnly) => {
+  const showImage = () => {
     if (props.image != undefined) {
       return (
         <Grid container xs={2}>
@@ -45,33 +46,49 @@ const Card = (props) => {
       return;
     }
   };
-
-  return (
-    <Grid item xs={12} sm={6} lg={4}>
-      <div className={classes.root + " " + classes.card}>
-        <Grid container alignItems="center">
-          {showImage()}
-          <Grid
-            className={classes.textSection}
-            container
-            direction="column"
-            spacing={0}
-            xs={9}
-          >
-            <Grid item>
-              <p className="overline">{props.overline}</p>
+  const getCard = () => {
+    return (
+      <Grid container alignItems="center">
+              {showImage()}
+              <Grid
+                className={classes.textSection}
+                container
+                direction="column"
+                spacing={0}
+                xs={9}
+              >
+                <Grid item>
+                  <p className="overline">{props.overline}</p>
+                </Grid>
+                <Grid item>
+                  <p className="subtitle1">{props.subtitle1}</p>
+                </Grid>
+                <Grid item>
+                  <p className="subtitle2">{props.subtitle2}</p>
+                </Grid>
+              </Grid>
             </Grid>
-            <Grid item>
-              <p className="subtitle1">{props.subtitle1}</p>
-            </Grid>
-            <Grid item>
-              <p className="subtitle2">{props.subtitle2}</p>
-            </Grid>
-          </Grid>
-        </Grid>
-      </div>
-    </Grid>
-  );
+    )
+  }
+  if (props.link != undefined) {
+    return (
+      <Grid item xs={12} sm={6} lg={4}>
+        <Link href={props.link} color="inherit" target="_blank">
+        <div className={classes.root + " " + classes.card}>
+          {getCard()}
+        </div>
+        </Link>
+      </Grid>
+    );
+  } else {
+    return (
+      <Grid item xs={12} sm={6} lg={4}>
+        <div className={classes.root + " " + classes.card}>
+          {getCard()}
+        </div>
+      </Grid>
+    );
+  }
 };
 Card.propTypes = {
   image: PropTypes.string,
@@ -83,6 +100,5 @@ Card.propTypes = {
 Card.defaultProps = {
   overline: "",
   subtitle1: "Subtitle 1",
-  subtitle2: "Add subtitle",
 };
 export default Card;

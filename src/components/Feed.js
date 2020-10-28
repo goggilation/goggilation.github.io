@@ -28,6 +28,7 @@ const Feed = (props) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
 
   useEffect( function effectFunction() {
+    let isSubscribed = true;
     base("FeedItems")
       .select({
         view: "Grid view",
@@ -42,6 +43,7 @@ const Feed = (props) => {
           setItems(items => [...items, record.fields]);
         });
       })
+      isSubscribed = false;
     }, []);
 
   return (

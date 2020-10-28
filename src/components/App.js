@@ -5,8 +5,8 @@ import FeedStart from "./FeedStart";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Navigation from "./Navigation";
-import Contact from "./Contact";
 import Footer from "./Footer";
+import ContactStart from "./ContactStart";
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -30,8 +30,8 @@ const App = () => {
       <Navigation/>
       <Switch>
         <Route exact path="/" component={Start} />
-        <Route path="/feed" render={FeedStart} />
-        <Route path="/contact" render={Contact} />
+        <Route exact path="/feed" render={FeedStart} />
+        <Route exact path="/contact" render={ContactStart} />
     </Switch>
     <Footer/>
     </Router>
