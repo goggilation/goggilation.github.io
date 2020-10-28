@@ -25,7 +25,8 @@ const Feed = (props) => {
             projectName={item.projectName}
             clientName={item.clientName}
             description={item.description}
-            ctaText={item.ctaText}
+            ctaText={items.CTA[0][item.type]}
+            ctaLink={item.ctaLink}
           />
         );
       })}

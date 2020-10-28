@@ -25,10 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     textAlign: "right",
-  },
-  filler: {
-    height: "auto",
-  },
+  }
 }));
 
 const FeedCard = (props) => {
@@ -45,19 +42,19 @@ const FeedCard = (props) => {
         ></Grid>
         <Grid item>
           {/* Card Content */}
-          <Grid container spacing={2} direction="column">
+          <Grid container spacing={1} direction="column">
             {/* Project & Client */}
             <Grid item className={classes.filler}>
               <Grid container direction="row">
-                <Grid container direction="column" xs={6} spacing={0}>
-                  <Grid item xs={12}>
+                <Grid container direction="column" xs={8} spacing={0}>
+                  <Grid item>
                     <span className="overline">Project</span>
                   </Grid>
                   <Grid item>
                     <span className="subtitle1">{props.projectName}</span>
                   </Grid>
                 </Grid>
-                <Grid container direction="column" xs={6} alignItems="flex-end">
+                <Grid container direction="column" xs={4} alignItems="flex-end">
                   <Grid item>
                     <span className="overline">Client</span>
                   </Grid>
@@ -67,11 +64,13 @@ const FeedCard = (props) => {
                 </Grid>
               </Grid>
             </Grid>
+            <Grid item><Divider /></Grid>
+            {/* Content */}
             <Grid item>
-              <span className="body1">{props.description}</span>
+              <span className="body2">{props.description}</span>
             </Grid>
             <Grid item xs={12} className={classes.button}>
-              <Button> {props.ctaText} </Button>
+              <Button href={props.ctaLink}> {props.ctaText} </Button>
             </Grid>
           </Grid>
         </Grid>
@@ -85,11 +84,13 @@ FeedCard.propTypes = {
   clientName: PropTypes.string,
   description: PropTypes.string,
   ctaText: PropTypes.string,
+  ctaLink: PropTypes.string,
 };
 
 FeedCard.defaultProps = {
   projectName: "Project Name",
   clientName: "Client Name",
   description: "Description of feed item",
+  ctaLink: "#"
 };
 export default FeedCard;
