@@ -2,35 +2,9 @@
   "CTA":[
     {
     "dribbble": "Open dribbble post",
-    "linkedin": "View Linked",
+    "linkedin": "View LinkedIn post",
     "medium": "Read medium post",
     "behance": "View behance post"
     }
-  ],
-  "FeedItems": [
-      {
-        "type": "dribbble",
-        "img": "./src/content/imgs/bigsur.png",
-        "projectName": "Big Sur Icons",
-        "clientName": "Personal",
-        "description": "Since Apple announced Big Sur and their new approach to the icons I've gotten really inspired. So inspired that I've started working on my own custom dock iconset.",
-        "ctaLink": "https://dribbble.com/shots/13931099-Big-Sur-Dock-Update"
-      },
-      {
-        "type": "dribbble",
-        "img": "./src/content/imgs/profilepage.png",
-        "projectName": "Daily UI",
-        "clientName": "Personal",
-        "description": "Daily UI Challenge where I created a profile page for a music app. I wanted to focus on the social aspects of music listening.",
-        "ctaLink": "https://dribbble.com/shots/6146048-Daily-UI-006-Profile-page"
-      },
-      {
-        "type": "dribbble",
-        "img": "./src/content/imgs/sweet_app.png",
-        "projectName": "Sweet App Icon",
-        "clientName": "Personal",
-        "description": "An app icon for a sweet finding app concept. Wether it's drinks or sweets you're after, this app will help you find it!",
-        "ctaLink": "https://dribbble.com/shots/6140512-Daily-UI-005-App-Icon"
-      }
   ]
 }
