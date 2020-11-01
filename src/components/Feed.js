@@ -33,6 +33,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const checkForMulti = (itemToCheck) => {
+  let multi = itemToCheck.img.length >= 2
+  return multi;
+}
+
 const showFeed = (items, classes, isMobile) => {
   if (items.length > 0) {
     return (
@@ -47,6 +52,7 @@ const showFeed = (items, classes, isMobile) => {
               description={item.description}
               ctaText={CTATEXT.CTA[0][item.type]}
               ctaLink={item.ctaLink}
+              carousel={checkForMulti(item)}
             />
           );
         })}
@@ -90,7 +96,7 @@ const Feed = (props) => {
           return;
         }
         records.forEach(function (record) {
-          console.log(record.fields);
+          // console.log(record.fields);
           setItems((items) => [...items, record.fields]);
         });
       });
