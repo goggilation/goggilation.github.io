@@ -46,7 +46,7 @@ const showFeed = (items, classes, isMobile) => {
           return (
             <FeedCard
               key={index}
-              img={item.img[0].url}
+              imgs={item.img}
               projectName={item.projectName}
               clientName={item.clientName}
               description={item.description}

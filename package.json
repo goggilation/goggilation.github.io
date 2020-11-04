@@ -25,6 +25,7 @@
     "airtable": "^0.10.0",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "nuka-carousel": "^4.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
