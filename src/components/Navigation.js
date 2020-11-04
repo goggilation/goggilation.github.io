@@ -1,9 +1,8 @@
 import React, { useState, useRef } from "react";
 import Grid from "@material-ui/core/Grid";
-import { BrowserRouter as Router } from "react-router-dom";
 import { NavLink as Link } from "react-router-dom";
 import Logo from "./Logo";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -25,10 +24,22 @@ const Navigation = (props) => {
           <Link to="/"><Logo size="small" /></Link>
           </Grid>
         </Grid>
-        <Grid container spacing={3} justify="flex-end" xs={10}>
-          <Grid item><Link to="/"><span className="body2">Me</span></Link></Grid>
-            <Grid item><Link to="/feed"><span className="body2">Feed</span></Link></Grid>
-          <Grid item><Link to="/contact"><span className="body2">Contact</span></Link></Grid>
+        <Grid container spacing={2} justify="flex-end" xs={10}>
+          <Grid item xs={3}>
+            <Link to="/" exact>
+              <span className="body2">Me</span>
+            </Link>
+          </Grid>
+          <Grid item xs={3}>
+            <Link to="/feed">
+              <span className="body2">Feed</span>
+            </Link>
+          </Grid>
+          <Grid item xs={3}>
+            <Link to="/contact">
+              <span className="body2">Contact</span>
+            </Link>
+          </Grid>
         </Grid>
       </Grid>
     </div>

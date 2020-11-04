@@ -29,9 +29,9 @@ const App = () => {
     <Router>
       <Navigation/>
       <Switch>
-        <Route exact path="/" component={Start} />
-        <Route exact path="/feed" render={FeedStart} />
-        <Route exact path="/contact" render={ContactStart} />
+        <Route exact path="/" activeClassName="current" component={Start} />
+        <Route path="/feed" activeClassName="current" render={FeedStart} />
+        <Route path="/contact" activeClassName="current" render={ContactStart} />
     </Switch>
     <Footer/>
     </Router>

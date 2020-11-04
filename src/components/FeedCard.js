@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, Divider } from "@material-ui/core";
+import { Button, Divider, Link } from "@material-ui/core";
 import Carousel from "nuka-carousel";
 import { render } from "react-dom";
 
@@ -93,7 +93,7 @@ const FeedCard = (props) => {
               <span className="body2">{props.description}</span>
             </Grid>
             <Grid item xs={12} className={classes.button}>
-              <Button href={props.ctaLink}> {props.ctaText} </Button>
+              <Link style={{textDecoration: 'none'}} href={props.ctaLink} target="_blank"><Button disableRipple> {props.ctaText} </Button></Link>
             </Grid>
           </Grid>
         </Grid>

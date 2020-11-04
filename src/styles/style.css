@@ -48,6 +48,7 @@ table {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 :root{
   flex-grow: 1;
@@ -66,6 +67,10 @@ body {
 a{
   color: var(--main-text-darkmode);
   text-decoration: none;
+}
+
+a.active > span{
+  font-weight: 700;
 }
 
 .slider-control-centerright, .slider-control-centerleft {
@@ -164,6 +169,7 @@ h6 {
   letter-spacing: 0.001em;
 }
 .body1 {
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -173,6 +179,7 @@ h6 {
   letter-spacing: 0.005em;
 }
 .body2 {
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -192,6 +199,7 @@ h6 {
   text-transform: uppercase;
 }
 .caption {
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
