@@ -77,6 +77,11 @@ a.active{
   display: none;
 }
 
+.paging-dot{
+  border: 2px solid var(--main-bg-color);
+  border-radius: 100%;
+}
+
 .wrapper{
   margin: 16px;
 }

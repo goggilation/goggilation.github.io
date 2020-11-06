@@ -1,6 +1,6 @@
 {
   "name": "aleksander-djordjevic-portfolio",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "My personal portfolio. Built in react with Material UI. Mostly for fun, but also for business :)",
   "main": "index.js",
   "scripts": {

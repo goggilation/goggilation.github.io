@@ -7,8 +7,6 @@ import Skeleton from "@material-ui/lab/Skeleton";
 import { useMediaQuery } from "@material-ui/core";
 import config from "../config";
 
-let itemsList = [];
-
 var Airtable = require("airtable");
 Airtable.configure({
   endpointUrl: "https://api.airtable.com",

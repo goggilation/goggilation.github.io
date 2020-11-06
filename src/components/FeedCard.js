@@ -4,7 +4,6 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Divider, Link } from "@material-ui/core";
 import Carousel from "nuka-carousel";
-import { render } from "react-dom";
 
 const useStyles = makeStyles((theme) => ({
   card: {
