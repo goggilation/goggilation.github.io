@@ -21,40 +21,42 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     overflow: "hidden",
   },
-  skeleton:{
+  skeleton: {
     backgroundColor: "rgba(255, 255, 255, 0.11)",
   },
-  skeletonImage:{
+  skeletonImage: {
     borderTopLeftRadius: 12,
-    borderTopRightRadius: 12
+    borderTopRightRadius: 12,
   },
-  skeletonText:{
-    marginTop: -16
+  skeletonText: {
+    marginTop: -16,
   },
 }));
 
 const checkForMulti = (itemToCheck) => {
-  let multi = itemToCheck.img.length >= 2
+  let multi = itemToCheck.img.length >= 2;
   return multi;
-}
+};
 
 const showFeed = (items, classes, isMobile) => {
   if (items.length > 0) {
     return (
       <Grid container className={classes.root} spacing={isMobile ? 4 : 6}>
         {items.map((item, index) => {
-          return (
-            <FeedCard
-              key={index}
-              imgs={item.img}
-              projectName={item.projectName}
-              clientName={item.clientName}
-              description={item.description}
-              ctaText={CTATEXT.CTA[0][item.type]}
-              ctaLink={item.ctaLink}
-              carousel={checkForMulti(item)}
-            />
-          );
+          if (!item.hidden) {
+            return (
+              <FeedCard
+                key={index}
+                imgs={item.img}
+                projectName={item.projectName}
+                clientName={item.clientName}
+                description={item.description}
+                ctaText={CTATEXT.CTA[0][item.type]}
+                ctaLink={item.ctaLink}
+                carousel={checkForMulti(item)}
+              />
+            );
+          }
         })}
       </Grid>
     );
@@ -62,16 +64,46 @@ const showFeed = (items, classes, isMobile) => {
     return (
       <Grid container className={classes.root} spacing={isMobile ? 4 : 6}>
         <Grid item xs={12} sm={6} md={4}>
-          <Skeleton animation="wave" className={classes.skeleton + " " + classes.skeletonImage} variant="rect" height={343} />
-          <Skeleton animation="wave" className={classes.skeleton + " " + classes.skeletonText} variant="text" height={120} />
+          <Skeleton
+            animation="wave"
+            className={classes.skeleton + " " + classes.skeletonImage}
+            variant="rect"
+            height={343}
+          />
+          <Skeleton
+            animation="wave"
+            className={classes.skeleton + " " + classes.skeletonText}
+            variant="text"
+            height={120}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <Skeleton animation="wave" className={classes.skeleton + " " + classes.skeletonImage} variant="rect" height={343} />
-          <Skeleton animation="wave" className={classes.skeleton + " " + classes.skeletonText} variant="text" height={120} />
+          <Skeleton
+            animation="wave"
+            className={classes.skeleton + " " + classes.skeletonImage}
+            variant="rect"
+            height={343}
+          />
+          <Skeleton
+            animation="wave"
+            className={classes.skeleton + " " + classes.skeletonText}
+            variant="text"
+            height={120}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <Skeleton animation="wave" className={classes.skeleton + " " + classes.skeletonImage} variant="rect" height={343} />
-          <Skeleton animation="wave" className={classes.skeleton + " " + classes.skeletonText} variant="text" height={120} />
+          <Skeleton
+            animation="wave"
+            className={classes.skeleton + " " + classes.skeletonImage}
+            variant="rect"
+            height={343}
+          />
+          <Skeleton
+            animation="wave"
+            className={classes.skeleton + " " + classes.skeletonText}
+            variant="text"
+            height={120}
+          />
         </Grid>
       </Grid>
     );

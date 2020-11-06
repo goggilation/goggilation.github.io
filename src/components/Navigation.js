@@ -19,7 +19,7 @@ const Navigation = (props) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Grid container spacing={0} alignItems="flex-start" alignItems="center">
+      <Grid container spacing={0} alignItems="center">
         <Grid item xs={1}>
           <Link to="/" exact>
             <Logo size="small" />

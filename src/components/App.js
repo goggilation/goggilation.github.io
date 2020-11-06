@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(1),
   },
   wrapper: {
-    [theme.breakpoints.up('lg')]: {
-      maxWidth: '1032px',
+    [theme.breakpoints.up('md')]: {
+      maxWidth: '768px',
       margin: '24px auto'
     }
   }

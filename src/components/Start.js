@@ -30,28 +30,31 @@ const Start = () => {
         <Grid item className={classes.helloSection}>
           <h5>Hi! I'm Aleks 👋</h5>
           <p className="body1">
-            Cupcake ipsum dolor sit amet I love cake croissant. Pastry sweet
-            roll cheesecake danish fruitcake candy canes I love. Caramels jelly
-            tiramisu.
+            I am a UI designer and hobbyist front end developer 🤓.
+          </p>
+          <p className="body1">
+            Currently developing my fatherly skills with my kids. Otherwise I'm
+            helping develop design systems at Volvo Group. Hit me up for
+            anything regarding design, sneakers or video games!
           </p>
         </Grid>
         <Grid item>
           <h6 className={classes.skillHeader}>Work</h6>
           <Grid container spacing={4}>
             <Card
-            image="./src/images/skills/volvo.jpg"
+              image="./src/images/skills/volvo.jpg"
               overline="Current"
               subtitle1="UI Designer"
               subtitle2="Volvo Group"
             />
             <Card
-            image="./src/images/skills/cgi.png"
+              image="./src/images/skills/cgi.png"
               overline="2017-2020"
               subtitle1="UX Design Consultant"
               subtitle2="CGI"
             />
             <Card
-            image="./src/images/skills/sr.png"
+              image="./src/images/skills/sr.png"
               overline="2015-2017"
               subtitle1="Graphic Designer"
               subtitle2="Swedish National Radio"

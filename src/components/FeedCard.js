@@ -23,6 +23,12 @@ const useStyles = makeStyles((theme) => ({
   },
   MuiDivider: {
     backgroundColor: "#fff",
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+  },
+  spacing:{
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
   },
   button: {
     textAlign: "right",
@@ -32,9 +38,9 @@ const useStyles = makeStyles((theme) => ({
 const FeedCard = (props) => {
   const classes = useStyles();
   return (
-    <Grid item xs={12} sm={6} md={4}>
+    <Grid item xs={12} sm={6}>
       {/* Card */}
-      <Grid container direction="column" spacing={2} className={classes.card}>
+      <Grid container direction="column"  spacing={3} className={classes.card}>
         {props.carousel ? (
           <Carousel
             defaultControlsConfig={{
@@ -47,6 +53,7 @@ const FeedCard = (props) => {
             {props.imgs.map((item, index) => {
               return (
                 <Grid
+                  key={index}
                   item
                   className={classes.image + " multi"}
                   style={{ backgroundImage: "url(" + item.url + ")" }}
@@ -63,9 +70,8 @@ const FeedCard = (props) => {
         )}
         <Grid item>
           {/* Card Content */}
-          <Grid container spacing={1} direction="column">
+          <Grid container spacing={0} direction="column">
             {/* Project & Client */}
-            <Grid item className={classes.filler}>
               <Grid container direction="row">
                 <Grid container direction="column" xs={8} spacing={0}>
                   <Grid item>
@@ -84,17 +90,26 @@ const FeedCard = (props) => {
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-            <Grid item>
+              <Grid item className={classes.spacing}>
               <Divider />
-            </Grid>
+              </Grid>
             {/* Content */}
             <Grid item>
               <span className="body2">{props.description}</span>
             </Grid>
-            <Grid item xs={12} className={classes.button}>
-              <Link style={{textDecoration: 'none'}} href={props.ctaLink} target="_blank"><Button disableRipple> {props.ctaText} </Button></Link>
-            </Grid>
+            {props.ctaLink != "#" ? (
+              <Grid item xs={12} className={classes.button + " " +  classes.spacing} >
+                <Link
+                  style={{ textDecoration: "none" }}
+                  href={props.ctaLink}
+                  target="_blank"
+                >
+                  <Button disableRipple> {props.ctaText} </Button>
+                </Link>
+              </Grid>
+            ) : (
+              <></>
+            )}
           </Grid>
         </Grid>
       </Grid>

@@ -1,7 +1,7 @@
 {
-  "name": "my-portfolio",
-  "version": "0.0.3",
-  "description": "",
+  "name": "aleksander-djordjevic-portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio. Built in react with Material UI. Mostly for fun, but also for business :)",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development",
