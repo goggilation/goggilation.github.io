@@ -61,7 +61,7 @@ const showFeed = (items, classes, isMobile) => {
   } else {
     return (
       <Grid container className={classes.root} spacing={isMobile ? 4 : 6}>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6}>
           <Skeleton
             animation="wave"
             className={classes.skeleton + " " + classes.skeletonImage}
@@ -75,21 +75,7 @@ const showFeed = (items, classes, isMobile) => {
             height={120}
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <Skeleton
-            animation="wave"
-            className={classes.skeleton + " " + classes.skeletonImage}
-            variant="rect"
-            height={343}
-          />
-          <Skeleton
-            animation="wave"
-            className={classes.skeleton + " " + classes.skeletonText}
-            variant="text"
-            height={120}
-          />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6}>
           <Skeleton
             animation="wave"
             className={classes.skeleton + " " + classes.skeletonImage}

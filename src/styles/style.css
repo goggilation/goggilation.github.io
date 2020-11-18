@@ -86,6 +86,10 @@ a.active{
   margin: 16px;
 }
 
+.MuiLink-underlineHover:hover{
+  text-decoration: none !important;
+}
+
 @media only screen and (min-width: 600px) {
   .wrapper{
     margin: 24px;
