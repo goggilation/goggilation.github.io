@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Start = () => {
+  gtag('set', 'page', '/Home');
+  gtag('send', 'pageview');
   const classes = useStyles();
   return (
     <>

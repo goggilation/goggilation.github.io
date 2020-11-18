@@ -4,6 +4,9 @@ import Grid from '@material-ui/core/Grid';
 
 const FeedStart = (props) => {
 
+  gtag('set', 'page', '/Feed');
+  gtag('send', 'pageview');
+
   return (
       <Grid container spacing={2} direction="column">
         <Grid item>
