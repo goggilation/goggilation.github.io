@@ -1,11 +1,13 @@
 import React from "react";
 import Feed from './Feed';
 import Grid from '@material-ui/core/Grid';
+import config from '../config'
 
 const FeedStart = (props) => {
 
-  gtag('set', 'page', '/Feed');
-  gtag('send', 'pageview');
+  gtag('config', config.GA_MEAS_ID, {
+    'page_title' : 'Feed',
+    'page_path': '/Feed'});
 
   return (
       <Grid container spacing={2} direction="column">

@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Card from "./Card";
+import config from '../config';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,8 +22,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Start = () => {
-  gtag('set', 'page', '/Home');
-  gtag('send', 'pageview');
+  gtag('config', config.GA_MEAS_ID, {
+    'page_title' : 'Start Page',
+    'page_path': '/Start'});
   const classes = useStyles();
   return (
     <>
