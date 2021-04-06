@@ -1,11 +1,16 @@
 {
-  "CTA":[
+  "blogPosts":[
     {
-    "dribbble": "Open dribbble post",
-    "linkedin": "View LinkedIn post",
-    "medium": "Read medium post",
-    "behance": "View behance post",
-    "website": "Visit site"
+      "title": "Hello",
+      "content": "''"
+    },
+    {
+      "title": "2",
+      "content": "'2222222'"
+    },
+    {
+      "title": "3",
+      "content": "'222'"
     }
   ]
 }

@@ -1,17 +1,16 @@
 import React from "react";
 import '../styles/style.css';
 import Start from "./Start";
-import FeedStart from "./FeedStart";
+import Blog from "./Blog";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import ContactStart from "./ContactStart";
 
 const useStyles = makeStyles((theme) => ({
   root:{
     flexGrow: 1,
-    marginBottom: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
   },
   wrapper: {
     [theme.breakpoints.up('md')]: {
@@ -30,8 +29,7 @@ const App = () => {
       <Navigation/>
       <Switch>
         <Route exact path="/" activeClassName="current" component={Start} />
-        <Route path="/feed" activeClassName="current" render={FeedStart} />
-        <Route path="/contact" activeClassName="current" render={ContactStart} />
+        <Route path="/blog" activeClassName="current" render={Blog} />
     </Switch>
     <Footer/>
     </Router>

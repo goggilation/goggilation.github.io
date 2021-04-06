@@ -12,7 +12,7 @@ const FeedStart = (props) => {
   return (
       <Grid container spacing={2} direction="column">
         <Grid item>
-          <h5>Feed</h5>
+          <h5>Blog</h5>
         </Grid>
         <Grid item>
             <Feed/>
