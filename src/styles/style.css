@@ -67,6 +67,8 @@ body {
   width: 100vw;
 }
 
+
+
 a.dribble {
   color: var(--social-dribble);
 }
@@ -81,6 +83,10 @@ a.twitter {
 
 a{
   color: var(--main-text-darkmode);
+  text-decoration: none;
+}
+
+a:hover{
   text-decoration: underline;
 }
 
