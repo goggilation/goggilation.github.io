@@ -4,19 +4,22 @@
     "title": "How to build a design system in Figma",
     "excerpt": "How we went from no guidance to component dominace",
     "img": "https://www.fillmurray.com/640/360.jpg",
-    "featured": false
+    "featured": false,
+    "post": "<html><div>hello</div></html>"
   },
   {
     "slug": "test-post-3",
     "title": "Reimagining the UI/UX disciplines ",
     "excerpt": "Finding balance between good looking and useful",
-    "featured": false
+    "featured": false,
+    "post": "<html><div>hello</div></html>"
   },
   {
     "slug": "test-post-2",
     "title": "How we built the Kingbolt Design System",
     "excerpt": "From anger to satisfaction with a lot of hard work",
     "img": "https://www.fillmurray.com/240/360.jpg",
-    "featured": true
+    "featured": true,
+    "post": "<h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1>"
   }
 ]

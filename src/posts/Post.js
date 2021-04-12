@@ -1,4 +1,4 @@
-import React from "react";
+import React, {dangerouslySetInnerHTML} from "react";
 import Grid from "@material-ui/core/Grid";
 import { useHistory, Link } from "react-router-dom";
 
@@ -13,6 +13,10 @@ const Post = (props) => {
     history.goBack();
   }
 
+  const markUp = () => {
+      return {__html: post.post};
+  };
+
   return (
     <Grid container spacing={4}>
       <Grid item>
@@ -21,6 +25,7 @@ const Post = (props) => {
       <Grid item>
         <h6>{post.title}</h6>
         <h4>{post.excerpt}</h4>
+        <div dangerouslySetInnerHTML={markUp()}></div>
       </Grid>
     </Grid>
   );
