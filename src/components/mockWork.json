@@ -1,0 +1,16 @@
+[
+  {
+    "featured": true,
+    "slug": "work-post-1",
+    "title": "Kingbolt Design System",
+    "thumbnail": "https://www.fillmurray.com/640/360.jpg",
+    "post": {"__html": "<h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1>"}
+  },
+  {
+    "featured": true,
+    "slug": "work-post-2",
+    "title": "Volvo Connect",
+    "thumbnail": "https://www.volvotrucks.com/en-en/services/optimized-business/volvo-connect/_jcr_content/root/responsivegrid/teaser_847098708.coreimg.jpeg/1610446283758/volvo-connect-optimized-business.jpeg",
+    "post": {"__html": "<h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1>"}
+  }
+]

@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
   imageContainer:{
     backgroundSize: 'cover !important',
     backgroundPosition: "center center !important",
-    height: '360px',
+    height: '390px',
   },
 
   img: {

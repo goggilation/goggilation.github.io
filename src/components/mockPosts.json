@@ -1,25 +1,25 @@
 [
   {
+    "featured": false,
     "slug": "test-post-1",
     "title": "How to build a design system in Figma",
     "excerpt": "How we went from no guidance to component dominace",
     "img": "https://www.fillmurray.com/640/360.jpg",
-    "featured": false,
-    "post": "<html><div>hello</div></html>"
+    "post": {"__html": "<h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1>"}
   },
   {
+    "featured": true,
     "slug": "test-post-3",
     "title": "Reimagining the UI/UX disciplines ",
     "excerpt": "Finding balance between good looking and useful",
-    "featured": false,
-    "post": "<html><div>hello</div></html>"
+    "post": {"__html": "<h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1>"}
   },
   {
+    "featured": true,
     "slug": "test-post-2",
     "title": "How we built the Kingbolt Design System",
     "excerpt": "From anger to satisfaction with a lot of hard work",
-    "img": "https://www.fillmurray.com/240/360.jpg",
-    "featured": true,
-    "post": "<h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1><h1>Title</h1>"
+    "img": "https://cdn.dribbble.com/users/2064310/screenshots/13931099/media/87d19356ba4f3efbdcdb31213abbd136.png?compress=1&resize=1600x1200",
+    "post": {"__html": "<div>\r\n    <h1>Test<\/h1>\r\n    <h4>Working?<\/h4>\r\n    <p>XClass<\/p>\r\n    <img src=\"src\/images\/contact\/dribbble.png\"\/>\r\n<\/div>"}
   }
 ]

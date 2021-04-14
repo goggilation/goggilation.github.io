@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Post from '../posts/Post';
+import Work from '../posts/Work';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +32,7 @@ const App = () => {
           <Route exact path="/" activeClassName="current" component={Start} />
           <Route path="/blog" activeClassName="current" render={Blog} />
           <Route path="/post/:slug" component={Post} />
+          <Route path="/work/:slug" component={Work} />
         </Switch>
         <Footer />
       </Router>

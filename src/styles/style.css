@@ -262,3 +262,36 @@ h6 {
 
   letter-spacing: 0.015em;
 }
+
+
+.single-post img{
+  width: 100%;
+  margin: 8px -13px;
+}
+
+.single-post .content-span{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.work-post img{
+  width: 100%;
+}
+
+.work-post h4, .work-post h5, .work-post h6{
+  width: 100%;
+  opacity: 0;
+  transition: all 250ms;
+}
+
+.work-post{
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  background-size: cover !important;
+}
+
+.work-post:hover h4{
+  opacity: 1;
+}

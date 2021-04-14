@@ -2,11 +2,11 @@ import React, {dangerouslySetInnerHTML} from "react";
 import Grid from "@material-ui/core/Grid";
 import { useHistory, Link } from "react-router-dom";
 
-const mockPosts = require("../components/mockPosts.json");
+const mockWork = require("../components/mockWork.json");
 
-const Post = (props) => {
+const Work = (props) => {
   const slug = props.match.params.slug;
-  const post = findPostBySlug(slug);
+  const post = findWorkBySlug(slug);
   const history = useHistory();
   
   function handleClick() {
@@ -28,8 +28,8 @@ const Post = (props) => {
   );
 };
 
-const findPostBySlug = (slug) => {
-  return mockPosts.find((o) => o.slug === slug);
+const findWorkBySlug = (slug) => {
+  return mockWork.find((o) => o.slug === slug);
 };
 
-export default Post;
+export default Work;

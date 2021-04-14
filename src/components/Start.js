@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Card from "./Card";
 import config from "../config";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const mockPosts = require("./mockPosts.json");
+const mockWork = require("./mockWork.json");
 
 const Start = () => {
   gtag("config", config.GA_MEAS_ID, {
@@ -24,7 +25,7 @@ const Start = () => {
   const classes = useStyles();
   return (
     <>
-      <Grid container spacing={4} direction="column">
+      <Grid container spacing={3} direction="column">
         <Grid item className={classes.textSection}>
           <h4>Hi! I'm Aleks 👋 I design!</h4>
           <p className="body1">
@@ -56,39 +57,36 @@ const Start = () => {
 
         <Grid item>
           <h5>Featured Work</h5>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={6} md={4}>
-              <img
-                style={{ width: "100%" }}
-                src="https://via.placeholder.com/300"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <img
-                style={{ width: "100%" }}
-                src="https://via.placeholder.com/300"
-              />
-            </Grid>
-            <Grid item xs={12} sm={6} md={4}>
-              <img
-                style={{ width: "100%" }}
-                src="https://via.placeholder.com/300"
-              />
-            </Grid>
+          <Grid className="featured-work" container spacing={1}>
+            {mockWork.map((work, index) => {
+              if (work.featured) {
+                return (
+                  <Grid item xs={12} sm={6} lg={4} key={index}>
+                    <Link to={"/work/" + work.slug}>
+                      <div
+                        className="work-post"
+                        style={{background: `url(${work.thumbnail})`}}
+                      >
+                        <h4>{work.title}</h4>
+                      </div>
+                    </Link>
+                  </Grid>
+                );
+              }
+              return;
+            })}
           </Grid>
         </Grid>
         <Grid item>
           <h5>Blog Articles</h5>
           <Grid container spacing={1}>
             {mockPosts.map((post, index) => {
-              if(post.featured){
-              return (
-                <Grid item xs={12} key={index}>
-                  <Link to={"/post/" + post.slug}>
-                    {post.title}
-                  </Link>
-                </Grid>
-              );
+              if (post.featured) {
+                return (
+                  <Grid item xs={12} key={index}>
+                    <Link to={"/post/" + post.slug}>{post.title}</Link>
+                  </Grid>
+                );
               }
               return;
             })}
