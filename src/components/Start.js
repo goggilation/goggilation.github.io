@@ -27,7 +27,7 @@ const Start = () => {
     <>
       <Grid container spacing={3} direction="column">
         <Grid item className={classes.textSection}>
-          <h4>Hi! I'm Aleks 👋 I design!</h4>
+          <h4>Hi! I'm Aleks 👋 I design! - deprecating this design</h4>
           <p className="body1">
             I’m currently developing design systems at Volvo Group, but I’ve
             worked with design for companies like CGI and Swedish National Radio
