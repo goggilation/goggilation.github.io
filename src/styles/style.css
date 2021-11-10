@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: disc;
 }
 blockquote, q {
 	quotes: none;
@@ -47,17 +47,91 @@ table {
 	border-spacing: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 :root{
+
+  ---dribbble: #EA4C89;
+  ---linkedin: #00A0DC;
+  ---twitter: #1DA1F2;
+  ---link: #ED18E4;
+
   flex-grow: 1;
   --main-bg-color: #282828;
   --main-text-darkmode: rgba(255,255,255,.92);
+
+  --typography-weight: 400;
+  --typography-style: normal;
+
+  --typography-h1-family: 'DM Serif Display', serif;
+  --typography-h1-line-height: 112px;
+  --typography-h1-size: 76px;
+  --typography-h1-letter-spacing: -1.15px;
+
+  --typography-h2-family: 'DM Serif Display', serif; 
+  --typography-h2-line-height: 80px;
+  --typography-h2-size: 56px;
+  --typography-h2-letter-spacing: -0.5px;
+
+  --typography-h3-family: 'DM Serif Display', serif; 
+  --typography-h3-line-height: 64px;
+  --typography-h3-size: 48px;
+  --typography-h3-letter-spacing: 0;
+
+  --typography-h4-family: 'DM Serif Display', serif; 
+  --typography-h4-line-height: 40px;
+  --typography-h4-size: 34px;
+  --typography-h4-letter-spacing: 0.25px;
+
+  --typography-h5-family: 'DM Serif Display', serif; 
+  --typography-h5-line-height: 32px;
+  --typography-h5-size: 24px;
+  --typography-h5-letter-spacing: 0;
+
+  --typography-h6-family: 'DM Serif Display', serif;
+  --typography-h6-line-height: 32px;
+  --typography-h6-size: 20px;
+  --typography-h6-letter-spacing: 0.15px;
+
+  --typography-sub1-family: 'DM Serif Display', serif;
+  --typography-sub1-line-height: 24px;
+  --typography-sub1-size: 16px;
+  --typography-sub1-letter-spacing: 0.15px;
+
+  --typography-sub2-family: 'DM Serif Display', serif;
+  --typography-sub2-line-height: 24px;
+  --typography-sub2-size: 14px;
+  --typography-sub2-letter-spacing: 0.1px;
+
+  --typography-body1-family: 'DM Sans', sans-serif;
+  --typography-body1-line-height: 24px;
+  --typography-body1-size: 16px;
+  --typography-body1-letter-spacing: 0.5px;
+
+  --typography-body2-family: 'DM Sans', sans-serif;
+  --typography-body2-line-height: 24px;
+  --typography-body2-size: 14px;
+  --typography-body2-letter-spacing: 0.25px;
+
+  --typography-button-family: 'DM Sans', sans-serif;
+  --typography-button-line-height: 14px;
+  --typography-button-size: 14px;
+  --typography-button-letter-spacing: 1.25px;
+
+  --typography-caption-family: 'DM Sans', sans-serif;
+  --typography-caption-line-height: 16px;
+  --typography-caption-size: 12px;
+  --typography-caption-letter-spacing: 0.4px;
+
+  --typography-overline-family: 'DM Sans', sans-serif;
+  --typography-overline-line-height: 16px;
+  --typography-overline-size: 12px;
+  --typography-overline-letter-spacing: 0.4px;
 }
 
 body {
-  font-family: "Poppins";
+  font-family: var(--typography-body1-family);
   background: var(--main-bg-color);
   color: var(--main-text-darkmode);
   margin: 0;
@@ -73,13 +147,18 @@ a.active{
   font-weight: 700;
 }
 
-.slider-control-centerright, .slider-control-centerleft {
-  display: none;
+.dribbble{
+  color: var(---dribbble);
 }
-
-.paging-dot{
-  border: 2px solid var(--main-bg-color);
-  border-radius: 100%;
+.twitter{
+  color: var(---twitter);
+}
+.linkedin{
+  color: var(---linkedin);
+}
+.mailLink{
+  color: var(---link);
+  text-decoration: underline;
 }
 
 .wrapper{
@@ -110,119 +189,130 @@ a.active{
 TYPE STYLES
 */
 h1 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 96px;
-  line-height: 104px;
+  font-family: var(--typography-h1-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-h1-size);
+  line-height: var(--typography-h1-line-height);
   /* or 108% */
 
-  letter-spacing: -0.015em;
+  letter-spacing: var(--typography-h1-letter-spacing);
 }
 h2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 64px;
+  font-family: var(--typography-h2-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-h2-size);
+  line-height: var(--typography-h2-line-height);
   /* or 107% */
 
-  letter-spacing: -0.005em;
+  letter-spacing: var(--typography-h2-letter-spacing);
 }
 h3 {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
+  font-family: var(--typography-h3-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-h3-size);
+  line-height: var(--typography-h3-line-height);
   /* identical to box height, or 117% */
+  letter-spacing: var(--typography-h3-letter-spacing);
 }
 h4 {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 44px;
+  font-family: var(--typography-h4-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-h4-size);
+  line-height: var(--typography-h4-line-height);
   /* or 129% */
 
-  letter-spacing: 0.0025em;
+  letter-spacing: var(--typography-h4-letter-spacing);
 }
 h5 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-family: var(--typography-h5-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-h5-size);
+  line-height: var(--typography-h5-line-height);
   /* or 133% */
+  letter-spacing: var(--typography-h5-letter-spacing);
 }
 h6 {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 24px;
+  font-family: var(--typography-h6-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-h6-size);
+  line-height: var(--typography-h6-line-height);
   /* or 120% */
 
-  letter-spacing: 0.0015em;
+  letter-spacing: var(--typography-h6-letter-spacing);
 }
 .subtitle1 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: var(--typography-sub1-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-sub1-size);
+  line-height: var(--typography-sub1-line-height);
   /* or 150% */
 
-  letter-spacing: 0.0015em;
+  letter-spacing: var(--typography-sub1-letter-spacing);
 }
 .subtitle2 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
+  font-family: var(--typography-sub2-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-sub2-size);
+  line-height: var(--typography-sub2-line-height);
   /* or 171% */
 
-  letter-spacing: 0.001em;
+  letter-spacing: var(--typography-sub2-letter-spacing);
 }
 .body1 {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: var(--typography-body1-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-body1-size);
+  line-height: var(--typography-body1-line-height);
   /* or 150% */
 
-  letter-spacing: 0.005em;
+  letter-spacing: var(--typography-body1-letter-spacing);
 }
 .body2 {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-family: var(--typography-body2-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-body2-size);
+  line-height: var(--typography-body2-line-height);
   /* or 171% */
 
-  letter-spacing: 0.0025em;
+  letter-spacing: var(--typography-body2-letter-spacing);
 }
 .button {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  font-family: var(--typography-button-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-button-size);
+  line-height: var(--typography-button-line-height);
   /* identical to box height, or 114% */
 
-  letter-spacing: 0.0125em;
-  text-transform: uppercase;
+  letter-spacing: var(--typography-button-letter-spacing);
 }
 .caption {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
+  font-family: var(--typography-caption-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-caption-size);
+  line-height: var(--typography-caption-line-height);
   /* or 133% */
 
-  letter-spacing: 0.004em;
+  letter-spacing: var(--typography-caption-letter-spacing);
 }
 .overline {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 16px;
+  font-family: var(--typography-overline-family);
+  font-style: var(--typography-style);
+  font-weight: var(--typography-weight);
+  font-size: var(--typography-overline-size);
+  line-height: var(--typography-overline-line-height);
   /* or 160% */
 
-  letter-spacing: 0.015em;
+  letter-spacing: var(--typography-overline-letter-spacing);
 }
