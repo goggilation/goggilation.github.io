@@ -33,16 +33,6 @@ const Navigation = (props) => {
                 Me
               </Link>
             </Grid>
-            <Grid item>
-              <Link to="/feed" className="body2">
-                Feed
-              </Link>
-            </Grid>
-            <Grid item>
-              <Link to="/contact" className="body2">
-                Contact
-              </Link>
-            </Grid>
           </Grid>
         </Grid>
       </Grid>
