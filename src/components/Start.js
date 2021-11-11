@@ -31,7 +31,7 @@ const Start = () => {
           <Grid item>
             <Grid container spacing={1}>
               <Grid item>
-                <h4>Hi! I'm Aleks 👋</h4>
+                <h4>I’m Aleks 🙂 I design!</h4>
               </Grid>
               <Grid item>
                 <p className="body1">
@@ -69,11 +69,9 @@ const Start = () => {
               </Grid>
               <Grid item>
                 <p className="body1">
-                  <ul>
-                    <li style={{marginLeft: 24}}>UI Design</li>
-                    <li style={{marginLeft: 24}}>Strategic work</li>
-                    <li style={{marginLeft: 24}}>Figma</li>
-                  </ul>
+                    <li style={{marginLeft: 16}}>UI Design</li>
+                    <li style={{marginLeft: 16}}>Strategic work</li>
+                    <li style={{marginLeft: 16}}>Figma</li>
                 </p>
               </Grid>
             </Grid>
@@ -85,23 +83,21 @@ const Start = () => {
               </Grid>
               <Grid item>
                 <p className="body1">
-                  <ul>
-                    <li style={{marginLeft: 24}}>Front end development</li>
-                    <li style={{marginLeft: 24}}>Team management</li>
-                  </ul>
+                    <li style={{marginLeft: 16}}>Front end development</li>
+                    <li style={{marginLeft: 16}}>Team management</li>
                 </p>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
+          <Grid item xs={12}>
             <Grid container spacing={1}>
               <Grid item xs={12}>
                 <h5>How I look</h5>
               </Grid>
-              <Grid item>
+              <Grid item xs={12}>
                 <p className="body1">
                   Like this
-                  <img width="100%" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                  <img width="100%" src="../src/images/me_water.png"/>
                 </p>
               </Grid>
             </Grid>
@@ -113,7 +109,7 @@ const Start = () => {
               </Grid>
               <Grid item>
                 <p className="body1">
-                See some of my design work over at <span className="dribbble">Dribbble</span>. Catch my ramblings over at <span className="twitter">Twitter</span>. Or be professional with me at <span className="linkedin">LinkedIn</span>. And of course, you can always <span className="mailLink">email me</span> 📯
+                See some of my design work over at <span className="dribbble"><a href="https://dribbble.com/goggilation">Dribbble</a></span>. Catch my ramblings at <span className="twitter"><a href="https://twitter.com/goggilation">Twitter</a></span>. Or be professional with me at <span className="linkedin"><a href="https://www.linkedin.com/in/aleksander-djordjevic-b8219384/">LinkedIn</a></span>. And of course, you can always <span className="mailLink"><a href="mailto:&#097;&#108;&#101;&#107;&#115;&#097;&#110;&#100;&#101;&#114;&#046;&#107;&#046;&#100;&#106;&#111;&#114;&#100;&#106;&#101;&#118;&#105;&#099;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">email me</a></span> 📯
                 </p>
               </Grid>
             </Grid>

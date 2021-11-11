@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    position: "relative",
     textAlign: "center",
     marginBottom: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 const Navigation = (props) => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div className={"navigation "+ classes.root}>
       <Grid container spacing={0} alignItems="center">
         <Grid item xs={1}>
           <Link to="/" exact>
@@ -29,8 +30,13 @@ const Navigation = (props) => {
         <Grid item xs={10}>
           <Grid container spacing={4} justify="flex-end">
             <Grid item>
-              <Link to="/" exact className="body2">
+              <Link to="/" exact className="body1">
                 Me
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link to="/work" exact className="body1">
+                Work
               </Link>
             </Grid>
           </Grid>

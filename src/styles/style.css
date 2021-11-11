@@ -48,7 +48,7 @@ table {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 :root{
 
@@ -138,13 +138,43 @@ body {
   width: 100vw;
 }
 
+.current{
+  font-weight: bolder;
+}
+
 a{
   color: var(--main-text-darkmode);
   text-decoration: none;
 }
 
+a.body1:hover{
+  text-decoration: none;
+  border-bottom: 1px solid var(--main-text-darkmode);
+}
+
+.navigation{
+  position: sticky !important;
+  top: 0;
+  background-color: var(--main-bg-color);
+}
+
+.footerheart::before{
+  content: '❤';
+  color: var(--main-text-darkmode);
+  transition: all 2s;
+}
+.footerheart:hover::before{
+  content: '❤';
+  color: red;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
 a.active{
   font-weight: 700;
+  border-bottom: 1px solid var(--main-text-darkmode);
 }
 
 .dribbble{
@@ -158,7 +188,9 @@ a.active{
 }
 .mailLink{
   color: var(---link);
-  text-decoration: underline;
+}
+.dribbble > a, .twitter > a, .linkedin > a, .mailLink > a{
+  color: inherit;
 }
 
 .wrapper{
