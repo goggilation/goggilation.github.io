@@ -12,8 +12,8 @@ const useStyles = makeStyles((theme) => ({
 const Footer = () => {
     const classes = useStyles();
   return (
-    <div className={classes.text}>
-        <span className="caption"><span class="footerheart"/> Aleksander Djordjevic 2021</span>
+    <div className={classes.text + " footer"}>
+        <a href="https://www.youtube.com/watch?v=CwRttSfnfcc"><span className="caption"><span className="footerheart"/> Aleksander Djordjevic 2021</span></a>
     </div>
   );
 };

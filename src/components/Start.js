@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Box, List } from "@material-ui/core";
+import { Grid, Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -52,10 +52,9 @@ const Start = () => {
                 <p className="body1">
                   From working at companies like Swedish National Radio and
                   Volvo, I’ve learned not only the power of diverse opinions,
-                  but also the strength in being always being open to learn new
+                  but also the strength in always being open to learn new
                   things. It’s what brought me from a graphic designer out of
-                  school, to a shift as podcaster / part time host on radio and
-                  back to UI designer and front end developer. I find my spark by taking full ownership of whatever I do, and
+                  school, to a podcaster / part time host on radio and back to UI designer and front end developer. I find my spark by taking full ownership of whatever I do, and
                   great pride in seing that thing to a a final state that
                   everyone involved is happy to use.
                 </p>
@@ -96,9 +95,17 @@ const Start = () => {
               </Grid>
               <Grid item xs={12}>
                 <p className="body1">
-                  Like this
-                  <img width="100%" src="../src/images/me_water.png"/>
-                </p>
+                  Like this</p>
+              </Grid>
+              <Grid item xs={12}>
+                  <div width="100%" style={{
+                    height: '566px',
+                    backgroundPosition: 'center',
+                    background: 'url(../src/images/me_water.png)',
+                    backgroundPositionX: 'center',
+                    backgroundPositionY: 'center',
+                    backgroundSize: 'cover',
+                  }} src="../src/images/me_water.png"/>
               </Grid>
             </Grid>
           </Grid>

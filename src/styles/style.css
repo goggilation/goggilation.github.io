@@ -158,14 +158,26 @@ a.body1:hover{
   background-color: var(--main-bg-color);
 }
 
+.backButton {
+  background-color: var(--main-bg-color);
+}
+
 .footerheart::before{
   content: '❤';
   color: var(--main-text-darkmode);
   transition: all 2s;
 }
-.footerheart:hover::before{
+.footer:hover .footerheart::before{
   content: '❤';
   color: red;
+}
+
+.footer:hover a{
+  text-decoration: none;
+}
+
+a{
+  cursor: pointer;
 }
 
 a:hover{

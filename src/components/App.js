@@ -1,6 +1,8 @@
 import React from "react";
 import '../styles/style.css';
 import Start from "./Start";
+import Work from "./Work";
+import LibraryApp from "./work-posts/LibraryApp";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -30,7 +32,9 @@ const App = () => {
       <Router>
         <Navigation/>
         <Switch>
-          <Route exact path="/" activeClassName="current" component={Start} />
+          <Route exact path="/" component={Start} />
+          <Route exact path="/work" component={Work} />
+          <Route exact path="/work/library-application" component={LibraryApp} />
       </Switch>
       <Footer/>
       </Router>
