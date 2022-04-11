@@ -44,7 +44,7 @@ const Card = (props) => {
                 <Grid container spacing={2}>
                     <Grid item>
                         <Grid container spacing={1}>
-                            <Grid item xs={12}><p className="overline">{props.scope}</p></Grid>
+                            <Grid item xs={12}><p className="overline scope">{props.scope}</p></Grid>
                             <Grid item xs={12}><h4>{props.title}</h4></Grid>
                         </Grid>
                     </Grid>

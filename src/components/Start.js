@@ -83,7 +83,8 @@ const Start = () => {
               <Grid item>
                 <p className="body1">
                     <li style={{marginLeft: 16}}>Front end development</li>
-                    <li style={{marginLeft: 16}}>Team management</li>
+                    <li style={{marginLeft: 16}}>Public speaking</li>
+                    <li style={{marginLeft: 16}}>Teambuilding</li>
                 </p>
               </Grid>
             </Grid>
@@ -101,11 +102,11 @@ const Start = () => {
                   <div width="100%" style={{
                     height: '566px',
                     backgroundPosition: 'center',
-                    background: 'url(../src/images/me_water.png)',
+                    background: 'url(https://dl.airtable.com/.attachments/b00972b237d7ac7faf1c4614147e3c8b/c6d3e966/me_water.png)',
                     backgroundPositionX: 'center',
                     backgroundPositionY: 'center',
                     backgroundSize: 'cover',
-                  }} src="../src/images/me_water.png"/>
+                  }} src="https://dl.airtable.com/.attachments/b00972b237d7ac7faf1c4614147e3c8b/c6d3e966/me_water.png"/>
               </Grid>
             </Grid>
           </Grid>

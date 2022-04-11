@@ -2,6 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import { Link, useHistory } from "react-router-dom";
+import * as CONSTANTS from '../../config';
+
+const AIRTABLE_CDN = CONSTANTS.AIRTABLE_CDN_BASE_URL;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,7 +56,7 @@ const LibraryApp = () => {
           <Grid item xs={12}>
             <img
               width="100%"
-              src="../src/images/library/find-at-lib.png"
+              src={`${AIRTABLE_CDN}805a57753b08afed1991b5aff5a6e48c/6a714a80/find-at-lib.png`}
             />
           </Grid>
           <Grid item xs={12} sm={8} lg={9}>
@@ -70,10 +73,10 @@ const LibraryApp = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <img width="100%" src="../src/images/library/search-borrow.jpeg" />
+            <img width="100%" src={`${AIRTABLE_CDN}6dccdf7885d274a8c977c111dc7c18ed/ed9c748d/search-borrow.jpeg`} />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <img width="100%" src="../src/images/library/my-loans.jpeg" />
+            <img width="100%" src={`${AIRTABLE_CDN}a7d9e23c11577f5ebd29bbdb9b577085/0ba6d237/my-loans.jpeg`} />
           </Grid>
           <Grid item xs={12} sm={8} lg={9}>
             <Grid container spacing={1}>
@@ -89,10 +92,10 @@ const LibraryApp = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <img width="100%" src="../src/images/library/find-shelf.jpeg" />
+            <img width="100%" src={`${AIRTABLE_CDN}8d13d216773605f94fe495fda9c0fd43/334b0d2d/find-shelf.jpeg`} />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <img width="100%" src="../src/images/library/guided-tour.jpeg" />
+            <img width="100%" src={`${AIRTABLE_CDN}f8c83277356f9cd272af09bd1e77d166/fafa61a6/guided-tour.jpeg`} />
           </Grid>
           <Grid item xs={12} sm={8} lg={9}>
             <span className="body1">
