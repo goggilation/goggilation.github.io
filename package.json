@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goggilation/my-portfolio.git"
+    "url": "git+https://github.com/goggilation/goggilation.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goggilation/my-portfolio/issues"
+    "url": "https://github.com/goggilation/goggilation.github.io/issues"
   },
   "homepage": "https://portfolio.aleksanderd.se",
   "dependencies": {
