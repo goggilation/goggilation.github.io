@@ -28,7 +28,7 @@ const Navigation = (props) => {
         </Grid>
         <Grid item xs={1} />
         <Grid item xs={10}>
-          <Grid container spacing={4} justify="flex-end">
+          <Grid container spacing={4} justifyContent="flex-end">
             <Grid item>
               <Link to="/" exact className="body1">
                 Me

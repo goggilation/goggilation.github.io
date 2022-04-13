@@ -66,7 +66,7 @@ const Stena = () => {
             </Grid>
           </Grid>
           <Grid item xs={12}>
-            <Grid container spacing={3} justify="space-around">
+            <Grid container spacing={3} justifyContent="space-around">
               <Grid item xs={6} sm={3}>
                 <img width="100%" src="https://dl.airtable.com/.attachments/b259f6c23472de2050c34dfafe6870b1/f5a79959/stena-collect.png" />
               </Grid>

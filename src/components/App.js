@@ -12,6 +12,10 @@ import { Box } from "@material-ui/core";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Stena from "./work-posts/Stena";
+import ReactGA from 'react-ga';
+import * as CONSTANTS from '../config';
+
+ReactGA.initialize(CONSTANTS.GA_UA_ID);
 
 const useStyles = makeStyles((theme) => ({
   root:{
@@ -30,6 +34,11 @@ const useStyles = makeStyles((theme) => ({
 const App = () => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('md'));
+
+  React.useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <Box width={matches ? '768px' : 'auto'} m={matches ? "24px auto" : 2}>
       <Router>
