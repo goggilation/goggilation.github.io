@@ -47,8 +47,8 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 :root{
 
@@ -57,11 +57,14 @@ table {
   ---twitter: #1DA1F2;
   ---link: #ED18E4;
 
+  ---base-red: #E30B5C;
+
   flex-grow: 1;
   --main-bg-color: #282828;
   --main-text-darkmode: rgba(255,255,255,.92);
 
-  --typography-weight: 400;
+  --typography-weight-regular: 400;
+  --typography-weight-bold: 700;
   --typography-style: normal;
 
   --typography-h1-family: 'DM Serif Display', serif;
@@ -169,7 +172,7 @@ a.body1:hover{
 }
 .footer:hover .footerheart::before{
   content: '❤';
-  color: red;
+  color: var(---base-red);
 }
 
 .footer:hover a{
@@ -185,7 +188,7 @@ a:hover{
 }
 
 a.active{
-  font-weight: 700;
+  font-weight: var(--typography-weight-bold);
   border-bottom: 1px solid var(--main-text-darkmode);
 }
 
@@ -239,7 +242,7 @@ TYPE STYLES
 h1 {
   font-family: var(--typography-h1-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h1-size);
   line-height: var(--typography-h1-line-height);
   /* or 108% */
@@ -249,7 +252,7 @@ h1 {
 h2 {
   font-family: var(--typography-h2-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h2-size);
   line-height: var(--typography-h2-line-height);
   /* or 107% */
@@ -259,7 +262,7 @@ h2 {
 h3 {
   font-family: var(--typography-h3-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h3-size);
   line-height: var(--typography-h3-line-height);
   /* identical to box height, or 117% */
@@ -268,7 +271,7 @@ h3 {
 h4 {
   font-family: var(--typography-h4-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h4-size);
   line-height: var(--typography-h4-line-height);
   /* or 129% */
@@ -278,7 +281,7 @@ h4 {
 h5 {
   font-family: var(--typography-h5-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h5-size);
   line-height: var(--typography-h5-line-height);
   /* or 133% */
@@ -287,7 +290,7 @@ h5 {
 h6 {
   font-family: var(--typography-h6-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h6-size);
   line-height: var(--typography-h6-line-height);
   /* or 120% */
@@ -297,7 +300,7 @@ h6 {
 .subtitle1 {
   font-family: var(--typography-sub1-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-sub1-size);
   line-height: var(--typography-sub1-line-height);
   /* or 150% */
@@ -307,7 +310,7 @@ h6 {
 .subtitle2 {
   font-family: var(--typography-sub2-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-sub2-size);
   line-height: var(--typography-sub2-line-height);
   /* or 171% */
@@ -317,7 +320,7 @@ h6 {
 .body1 {
   font-family: var(--typography-body1-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-body1-size);
   line-height: var(--typography-body1-line-height);
   /* or 150% */
@@ -327,7 +330,7 @@ h6 {
 .body2 {
   font-family: var(--typography-body2-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-body2-size);
   line-height: var(--typography-body2-line-height);
   /* or 171% */
@@ -337,7 +340,7 @@ h6 {
 .button {
   font-family: var(--typography-button-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-button-size);
   line-height: var(--typography-button-line-height);
   /* identical to box height, or 114% */
@@ -347,7 +350,7 @@ h6 {
 .caption {
   font-family: var(--typography-caption-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-caption-size);
   line-height: var(--typography-caption-line-height);
   /* or 133% */
@@ -357,7 +360,7 @@ h6 {
 .overline {
   font-family: var(--typography-overline-family);
   font-style: var(--typography-style);
-  font-weight: var(--typography-weight);
+  font-weight: var(--typography-weight-regular);
   font-size: var(--typography-overline-size);
   line-height: var(--typography-overline-line-height);
   /* or 160% */

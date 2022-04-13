@@ -25,9 +25,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const LibraryApp = () => {
-  // gtag('config', config.GA_MEAS_ID, {
-  //   'page_title' : 'Start Page',
-  //   'page_path': '/Start'});
   const classes = useStyles();
   const history = useHistory();
   return (

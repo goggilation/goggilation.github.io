@@ -20,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Start = () => {
-  // gtag('config', config.GA_MEAS_ID, {
-  //   'page_title' : 'Start Page',
-  //   'page_path': '/Start'});
   const classes = useStyles();
   return (
     <>
@@ -68,9 +65,9 @@ const Start = () => {
               </Grid>
               <Grid item>
                 <p className="body1">
+                    <li style={{marginLeft: 16}}>Design systems</li>
                     <li style={{marginLeft: 16}}>UI Design</li>
                     <li style={{marginLeft: 16}}>Strategic work</li>
-                    <li style={{marginLeft: 16}}>Figma</li>
                 </p>
               </Grid>
             </Grid>
