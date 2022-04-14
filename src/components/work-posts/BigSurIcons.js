@@ -37,11 +37,11 @@ const BigSurIcons = () => {
           <Grid item xs={12} sm={8} lg={9}>
             <Grid container spacing={1}>
               <Grid item>
-                <h4>Big Sur Iconset</h4>
+                <h4>Big Sur Icon Set</h4>
               </Grid>
               <Grid item>
                 <p className="body1">
-                When Apple announced Big Sur and their new approach to the icons I've gotten really inspired. So inspired that I've started working on my own custom dock iconset.
+                When Apple announced Big Sur and their new approach to the icons I've gotten really inspired. So inspired that I've started working on my own custom dock icon set.
                 </p>
               </Grid>
             </Grid>
@@ -59,7 +59,7 @@ const BigSurIcons = () => {
               </Grid>
               <Grid item>
                 <span className="body1">
-                What I enjoyed about diving into this was the idea of trying to rething some of the basics. Not going to crazy with the icons, and still making them feel relevant and new.
+                What I enjoyed about diving into this was the idea of trying to rethink some of the basics. Not going to crazy with the icons, and still making them feel relevant and new.
                 </span>
               </Grid>
             </Grid>

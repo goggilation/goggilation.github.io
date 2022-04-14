@@ -82,10 +82,7 @@ const Stena = () => {
               </Grid>
               <Grid item>
                 <span className="body1">
-                  There were a bunch of hurdles to getting this project up and
-                  running. Meaning we had to let go of some ideas of complete
-                  design process. Unfortunately this lead to a product that had
-                  great intentions, but never got to see the light of day.
+                There were a bunch of hurdles to getting this project up and running. Meaning we had to let go of some ideas of complete design process. Unfortunately, this lead to a product that had great intentions, but never got to see the light of day.
                 </span>
               </Grid>
             </Grid>

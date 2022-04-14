@@ -41,11 +41,7 @@ const LibraryApp = () => {
               </Grid>
               <Grid item>
                 <p className="body1">
-                  I was a part of the team that designed and developed the
-                  Gothenburg City Library App. It's primary objective was
-                  obviously to let users find and borrow books, but it also
-                  provided some neat navigational features like guided tours and
-                  Find Your Shelf.
+                  I was a part of the team that designed and developed the Gothenburg City Library App. Its primary objective was obvious to let users find and borrow books, but it also provided some neat navigational features like guided tours and Find Your Shelf.
                 </p>
               </Grid>
             </Grid>
@@ -96,9 +92,7 @@ const LibraryApp = () => {
           </Grid>
           <Grid item xs={12} sm={8} lg={9}>
             <span className="body1">
-              Using bluetooth beacons we were able to provide functionality like
-              guided tours through the library, and the ability to find your
-              desired books shelf in the 3 story library!
+            Using Bluetooth beacons, we were able to provide functionality like guided tours through the library, and the ability to find your desired book shelf in the 3 story library!
             </span>
           </Grid>
         </Grid>

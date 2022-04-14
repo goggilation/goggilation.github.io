@@ -2,12 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {makeStyles} from '@material-ui/core/styles';
-import {Box, Divider, Grid, Typography} from '@material-ui/core';
+import {Box, Divider, Grid} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-
-    },
     cardRoot: {
         minHeight: 353,
         backgroundBlendMode: 'luminosity',
@@ -58,19 +55,3 @@ const Card = (props) => {
   );
 };
 export default Card;
-
-
-// <Grid item xs={props.xs}>
-//         <Grid container direction="column">
-//             <Grid item>
-//                 <Box p={2} style={{backgroundColor: props.bgColor}}>
-//                     <Grid item xs={12}>
-//                         <span className="overline">Project name</span>
-//                     </Grid>
-//                     <Grid item xs={12}>
-//                         <h4>Nisi, mauris mattis et commodo.</h4>
-//                     </Grid>
-//                 </Box>
-//             </Grid>
-//         </Grid>
-//     </Grid>

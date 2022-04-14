@@ -55,7 +55,7 @@ const Work = () => {
               slug="big-sur-iconset"
               bg={`${AIRTABLE_CDN}2dc682446f2b6832e46c6b7fca4fb083/322508c8/promo.png`}
               scope="App Icon Design"
-              title="Big Sur Iconset"
+              title="Big Sur Icon Set"
               //excerpt="When Apple announced Big Sur and their new approach to the icons I've gotten really inspired. So inspired that I've started working on my own custom dock iconset."
               />
           </Grid>
@@ -72,7 +72,7 @@ const Work = () => {
             <Card 
               slug="swedish-national-radio"
               bg={`${AIRTABLE_CDN}2554b49c5e608f0c75beecb95e039ed1/d36c5851/geggan.jpg`}
-              scope="Social Work"
+              scope="Graphic design & Audio Production"
               title="Swedish National Radio"
               //excerpt="I worked as a graphic designer and digital editor at the public service institution Swedish National Radio(SR) for two years. My work here made me well versed in working towards usability in every aspect of design. I also had the great pleasure of creating, producing and hosting some of the programs that aired on radio."
               />

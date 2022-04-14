@@ -61,7 +61,7 @@ const SR = () => {
               </Grid>
               <Grid item>
                 <span className="caption">
-                P.S Most of this is in swedish. Sorry for that!
+                P.S Most of this is in Swedish. Sorry for that!
                 </span>
               </Grid>
             </Grid>
@@ -91,7 +91,7 @@ const SR = () => {
               </Grid>
               <Grid item>
                 <span className="body1">
-                One of my most proud working experiences not just at P3, but at all, is the work I got to do with Musikhjälpen. Being just a minor piece in the mega puzzle that creates a week of joy really is bar none when it comes to fulfilling work duties. Below are some of my, very minor, contributions to that cause.
+                One of my most proud working experiences not just at P3, but overall, is the work I got to do with Musikhjälpen. Being just a minor piece in the mega puzzle that creates a week of joy really is bar none when it comes to fulfilling work duties. Below are some of mine, very minor, contributions to that cause.
                 </span>
               </Grid>
             </Grid>
