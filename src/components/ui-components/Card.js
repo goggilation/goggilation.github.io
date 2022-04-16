@@ -20,20 +20,22 @@ const useStyles = makeStyles((theme) => ({
 
 const Card = (props) => {
     const classes = useStyles();
-    let [hover, setHover] = useState();
+    const [hover, setHover] = useState();
 
     let hoverOpacity = !hover ? '.7' : '.5';
 
     const hoverAdaptor = () => {
         setHover(!hover)
-        console.log(hover);
-        console.log(hoverOpacity);
+        //console.log(hover);
+        //console.log(hoverOpacity);
     };
 
-    const linearGradient = `linear-gradient(0deg, rgba(0,0,0, ${hoverOpacity}), rgba(0, 0, 0, ${hoverOpacity}))`;
+    const hoverRgbValue = localStorage.getItem("theme") === 'dark' ? '40,40,40' : '232, 232, 232';
+
+    const linearGradient = `linear-gradient(0deg, rgba(${hoverRgbValue}, ${hoverOpacity}), rgba(${hoverRgbValue}, ${hoverOpacity}))`;
   return (
       <Link to={`/work/${props.slug}`}>
-      <Grid container onMouseEnter={hoverAdaptor} onMouseLeave={hoverAdaptor} spacing={0} className={classes.cardRoot} style={{
+      <Grid container onMouseEnter={hoverAdaptor} onMouseLeave={hoverAdaptor} spacing={0} className="cardRoot" style={{
           backgroundImage: `${linearGradient}, url('${props.bg}'`
           }}>
       <Grid item>

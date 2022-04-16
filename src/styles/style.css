@@ -61,7 +61,8 @@ table {
 
   flex-grow: 1;
   --main-bg-color: #282828;
-  --main-text-darkmode: rgba(255,255,255,.92);
+  --main-text: rgba(255,255,255,.92);
+  --main-text-inverse: rgba(255,255,255,.92);
 
   --typography-weight-regular: 400;
   --typography-weight-bold: 700;
@@ -133,10 +134,37 @@ table {
   --typography-overline-letter-spacing: 0.4px;
 }
 
+[data-theme="light"] {
+  ---dribbble: #be3c6e;
+  ---linkedin: #017098;
+  ---twitter: #0d517b;
+  ---link: #a2129b;
+
+  ---base-red: #9e083f;
+
+  flex-grow: 1;
+  --main-bg-color: #e8e8e8;
+  --main-text: rgba(25, 25, 25, .87);
+  --main-text-inverse: rgba(255,255,255,.92);
+
+}
+
+.cardRoot {
+  color: var(--main-text);
+  min-height: 353px;
+  background-blend-mode: luminosity;
+  background-color: rgba(255,255,255,0.67);
+  background-size: cover;
+  transition: all .5s;
+}
+.cardRoot:hover {
+      background-color: var(--main-bg-color);
+  }
+
 body {
   font-family: var(--typography-body1-family);
   background: var(--main-bg-color);
-  color: var(--main-text-darkmode);
+  color: var(--main-text);
   margin: 0;
   width: 100vw;
 }
@@ -146,13 +174,13 @@ body {
 }
 
 a{
-  color: var(--main-text-darkmode);
+  color: var(--main-text);
   text-decoration: none;
 }
 
 a.body1:hover{
   text-decoration: none;
-  border-bottom: 1px solid var(--main-text-darkmode);
+  border-bottom: 1px solid var(--main-text);
 }
 
 .navigation{
@@ -167,7 +195,7 @@ a.body1:hover{
 
 .footerheart::before{
   content: '❤';
-  color: var(--main-text-darkmode);
+  color: var(--main-text);
   transition: all 2s;
 }
 .footer:hover .footerheart::before{
@@ -189,7 +217,7 @@ a:hover{
 
 a.active{
   font-weight: var(--typography-weight-bold);
-  border-bottom: 1px solid var(--main-text-darkmode);
+  border-bottom: 1px solid var(--main-text);
 }
 
 .dribbble{
