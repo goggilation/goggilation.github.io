@@ -3,34 +3,19 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {makeStyles} from '@material-ui/core/styles';
 import {Box, Divider, Grid} from '@material-ui/core';
-
-const useStyles = makeStyles((theme) => ({
-    cardRoot: {
-        minHeight: 353,
-        backgroundBlendMode: 'luminosity',
-        backgroundColor: 'rgba(255,255,255,0.67)',
-        backgroundSize: 'cover',
-        transition: 'all .5s',
-
-        '&:hover': {
-            backgroundColor: 'rgba(255,255,255,0)',
-        }
-    },
-}));
+import { getTheme } from "../theme";
 
 const Card = (props) => {
-    const classes = useStyles();
+    const theme = getTheme()[0]
     const [hover, setHover] = useState();
 
     let hoverOpacity = !hover ? '.7' : '.5';
 
     const hoverAdaptor = () => {
         setHover(!hover)
-        //console.log(hover);
-        //console.log(hoverOpacity);
     };
 
-    const hoverRgbValue = localStorage.getItem("theme") === 'dark' ? '40,40,40' : '232, 232, 232';
+    const hoverRgbValue = theme === 'dark' ? '40,40,40' : '232, 232, 232';
 
     const linearGradient = `linear-gradient(0deg, rgba(${hoverRgbValue}, ${hoverOpacity}), rgba(${hoverRgbValue}, ${hoverOpacity}))`;
   return (
@@ -47,7 +32,7 @@ const Card = (props) => {
                             <Grid item xs={12}><h4>{props.title}</h4></Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12}><Divider style={{backgroundColor: "#fff"}}/></Grid>
+                    <Grid item xs={12}><Divider/></Grid>
                     <Grid item xs={12}><p className="body1">{props.excerpt}</p></Grid>
                 </Grid>
             </Box>

@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
+// https://dl.airtable.com/.attachments/b00972b237d7ac7faf1c4614147e3c8b/c6d3e966/me_water.png
+
 const meImg = "https://dl.airtable.com/.attachments/3c1d17c163b446360b6b34df6eca57c5/079b4d28/me-woods.jpg";
 
 const Start = () => {
