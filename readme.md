@@ -2,6 +2,4 @@
 
 > Just my portfolio playground.
 
-> Built with react.
-
-> Not ready for prime time.
+> Built with react + github pages.
