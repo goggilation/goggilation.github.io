@@ -32,7 +32,7 @@ const Card = (props) => {
                             <Grid item xs={12}><h4>{props.title}</h4></Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={12}><Divider/></Grid>
+                    {/* <Grid item xs={12}><Divider/></Grid> */}
                     <Grid item xs={12}><p className="body1">{props.excerpt}</p></Grid>
                 </Grid>
             </Box>

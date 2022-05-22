@@ -25,3 +25,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update platform deliverables
+      - name: Build App
+        run: npm run predeploy
+      - name: Publish GH Page
+        run: npm run deploy

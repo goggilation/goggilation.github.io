@@ -130,111 +130,103 @@ table {
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import "tokes/css/_variables.css";
 
 :root {
-  ---dribbble: #ea4c89;
-  ---linkedin: #00a0dc;
-  ---twitter: #1da1f2;
-  ---link: #ed18e4;
+  ---dribbble: var(--color-dark-link-dribbble);
+  ---linkedin: var(--color-dark-link-linkedin);
+  ---twitter: var(--color-dark-link-twitter);
+  ---link: var(--color-dark-link-default);
 
-  ---base-red: #e30b5c;
+  ---base-red: var(---color-dark-base-red);
 
   flex-grow: 1;
-  --main-bg-color: #282828;
-  --main-text: rgba(255, 255, 255, 0.92);
-  --main-text-inverse: rgba(255, 255, 255, 0.92);
+  --main-bg-color: var(--color-dark-background-main);
+  --main-text: var(--color-dark-content-default);
+  --main-text-inverse: var(--color-dark-content-muted);
 
   --typography-weight-regular: 400;
   --typography-weight-bold: 700;
   --typography-style: normal;
+  --typography-family-header: "DM Serif Display", serif;
+  --typography-family-body: "DM Serif Display", sans-serif;
 
-  --typography-h1-family: "DM Serif Display", serif;
   --typography-h1-line-height: 112px;
   --typography-h1-size: 76px;
   --typography-h1-letter-spacing: -1.15px;
 
-  --typography-h2-family: "DM Serif Display", serif;
   --typography-h2-line-height: 80px;
   --typography-h2-size: 56px;
   --typography-h2-letter-spacing: -0.5px;
 
-  --typography-h3-family: "DM Serif Display", serif;
   --typography-h3-line-height: 64px;
   --typography-h3-size: 48px;
   --typography-h3-letter-spacing: 0;
 
-  --typography-h4-family: "DM Serif Display", serif;
   --typography-h4-line-height: 40px;
   --typography-h4-size: 34px;
   --typography-h4-letter-spacing: 0.25px;
 
-  --typography-h5-family: "DM Serif Display", serif;
   --typography-h5-line-height: 32px;
   --typography-h5-size: 24px;
   --typography-h5-letter-spacing: 0;
 
-  --typography-h6-family: "DM Serif Display", serif;
   --typography-h6-line-height: 32px;
   --typography-h6-size: 20px;
   --typography-h6-letter-spacing: 0.15px;
 
-  --typography-sub1-family: "DM Serif Display", serif;
   --typography-sub1-line-height: 24px;
   --typography-sub1-size: 16px;
   --typography-sub1-letter-spacing: 0.15px;
 
-  --typography-sub2-family: "DM Serif Display", serif;
   --typography-sub2-line-height: 24px;
   --typography-sub2-size: 14px;
   --typography-sub2-letter-spacing: 0.1px;
 
-  --typography-body1-family: "DM Sans", sans-serif;
   --typography-body1-line-height: 24px;
   --typography-body1-size: 16px;
   --typography-body1-letter-spacing: 0.5px;
 
-  --typography-body2-family: "DM Sans", sans-serif;
   --typography-body2-line-height: 24px;
   --typography-body2-size: 14px;
   --typography-body2-letter-spacing: 0.25px;
 
-  --typography-button-family: "DM Sans", sans-serif;
   --typography-button-line-height: 14px;
   --typography-button-size: 14px;
   --typography-button-letter-spacing: 1.25px;
 
-  --typography-caption-family: "DM Sans", sans-serif;
   --typography-caption-line-height: 16px;
   --typography-caption-size: 12px;
   --typography-caption-letter-spacing: 0.4px;
 
-  --typography-overline-family: "DM Sans", sans-serif;
   --typography-overline-line-height: 16px;
   --typography-overline-size: 12px;
   --typography-overline-letter-spacing: 0.4px;
 }
 
 [data-theme="light"] {
-  ---dribbble: #be3c6e;
-  ---linkedin: #017098;
-  ---twitter: #0d517b;
-  ---link: #a2129b;
+  ---dribbble: var(--color-light-link-dribbble);
+  ---linkedin: var(--color-light-link-linkedin);
+  ---twitter: var(--color-light-link-twitter);
+  ---link: var(--color-light-link-default);
 
-  ---base-red: #9e083f;
+  ---base-red: var(---color-light-base-red);
 
-  flex-grow: 1;
-  --main-bg-color: #e8e8e8;
-  --main-text: rgba(25, 25, 25, 0.87);
-  --main-text-inverse: rgba(0, 0, 0, 0.92);
+  --main-bg-color: var(--color-light-background-main);
+  --main-text: var(--color-light-content-muted);
+  --main-text-inverse: var(--color-light-content-default);
 }
 
 .cardRoot {
   color: var(--main-text);
   min-height: 353px;
   background-blend-mode: luminosity;
-  background-color: rgba(255, 255, 255, 0.67);
+  background-color: var(--color-dark-background-light);
   background-size: cover;
   transition: all 0.5s;
+}
+[data-theme="light"] .cardRoot {
+  background-color: var(--color-light-background-light);
 }
 .cardRoot:hover {
   background-color: var(--main-bg-color);
@@ -243,7 +235,7 @@ table {
 .MuiDivider-root {
   background-color: var(--main-text-inverse) !important;
 }
-.MuiIconButton-root{
+.MuiIconButton-root {
   color: white !important;
 }
 
@@ -356,8 +348,20 @@ a.active {
 /*
 TYPE STYLES
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.subtitle1,
+.subtitle1 {
+  font-family: var(--typography-family-header);
+}
+.body1, .body2, .overline, .caption, .button{
+  font-family: var(--typography-family-body);
+}
 h1 {
-  font-family: var(--typography-h1-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h1-size);
@@ -367,7 +371,6 @@ h1 {
   letter-spacing: var(--typography-h1-letter-spacing);
 }
 h2 {
-  font-family: var(--typography-h2-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h2-size);
@@ -377,7 +380,6 @@ h2 {
   letter-spacing: var(--typography-h2-letter-spacing);
 }
 h3 {
-  font-family: var(--typography-h3-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h3-size);
@@ -386,7 +388,6 @@ h3 {
   letter-spacing: var(--typography-h3-letter-spacing);
 }
 h4 {
-  font-family: var(--typography-h4-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h4-size);
@@ -396,7 +397,6 @@ h4 {
   letter-spacing: var(--typography-h4-letter-spacing);
 }
 h5 {
-  font-family: var(--typography-h5-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h5-size);
@@ -405,7 +405,6 @@ h5 {
   letter-spacing: var(--typography-h5-letter-spacing);
 }
 h6 {
-  font-family: var(--typography-h6-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-h6-size);
@@ -415,7 +414,6 @@ h6 {
   letter-spacing: var(--typography-h6-letter-spacing);
 }
 .subtitle1 {
-  font-family: var(--typography-sub1-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-sub1-size);
@@ -425,7 +423,6 @@ h6 {
   letter-spacing: var(--typography-sub1-letter-spacing);
 }
 .subtitle2 {
-  font-family: var(--typography-sub2-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-sub2-size);
@@ -435,7 +432,6 @@ h6 {
   letter-spacing: var(--typography-sub2-letter-spacing);
 }
 .body1 {
-  font-family: var(--typography-body1-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-body1-size);
@@ -445,7 +441,6 @@ h6 {
   letter-spacing: var(--typography-body1-letter-spacing);
 }
 .body2 {
-  font-family: var(--typography-body2-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-body2-size);
@@ -455,7 +450,6 @@ h6 {
   letter-spacing: var(--typography-body2-letter-spacing);
 }
 .button {
-  font-family: var(--typography-button-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-button-size);
@@ -465,7 +459,6 @@ h6 {
   letter-spacing: var(--typography-button-letter-spacing);
 }
 .caption {
-  font-family: var(--typography-caption-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-caption-size);
@@ -475,7 +468,6 @@ h6 {
   letter-spacing: var(--typography-caption-letter-spacing);
 }
 .overline {
-  font-family: var(--typography-overline-family);
   font-style: var(--typography-style);
   font-weight: var(--typography-weight-regular);
   font-size: var(--typography-overline-size);
