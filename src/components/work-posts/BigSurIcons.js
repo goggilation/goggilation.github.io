@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Box } from "@material-ui/core";
 import { Link, useHistory } from "react-router-dom";
-import * as CONSTANTS from '../../config';
+import * as CONSTANTS from '../../secretConfig';
 
 const AIRTABLE_CDN = CONSTANTS.AIRTABLE_CDN_BASE_URL;
 

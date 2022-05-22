@@ -13,7 +13,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import Stena from "./work-posts/Stena";
 import ReactGA from "react-ga";
-import * as CONSTANTS from "../config";
+import * as CONSTANTS from "../secretConfig";
 import { ThemeProvider } from "./theme";
 
 ReactGA.initialize(CONSTANTS.GA_UA_ID);

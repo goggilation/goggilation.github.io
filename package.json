@@ -33,8 +33,10 @@
     "react-dom": "^16.13.1",
     "react-ga": "^3.3.0",
     "react-router-dom": "^5.2.0",
+    "style-dictionary": "^3.7.0",
     "style-loader": "^1.2.1",
     "styled-components": "^5.1.0",
+    "token-transformer": "^0.0.22",
     "url-loader": "^4.1.0"
   },
   "devDependencies": {

@@ -1,0 +1,27 @@
+# .github/workflows/export-tokens-on-input.yml
+name: Export Tokens On Input
+
+on:
+  push:
+    paths:
+      - "src/tokens/transformed/design-tokens.json"
+
+jobs:
+  export_tokens:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+      - name: Install Node Dependencies
+        run: npm install
+      - name: Convert Figma tokens to Style Dictionary tokens
+        run: npx token-transformer src/tokens/base/design-tokens.json src/tokens/transformed/design-tokens.json --expandTypography=true
+      - name: Build Style Dictionary
+        run: npx style-dictionary build
+      - name: Commit Generated Platform Deliverables
+        id: "auto-commit-action"
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update platform deliverables
