@@ -1,48 +1,97 @@
 {
   "color": {
-    "link": {
-      "dribbble": {
-        "value": "#be3c6e",
-        "type": "color"
+    "dark": {
+      "link": {
+        "dribbble": {
+          "value": "#EA4C89",
+          "type": "color"
+        },
+        "linkedin": {
+          "value": "#00a0dc",
+          "type": "color"
+        },
+        "default": {
+          "value": "#f828ee",
+          "type": "color"
+        },
+        "twitter": {
+          "value": "#1da1f2",
+          "type": "color"
+        }
       },
-      "linkedin": {
-        "value": "#017098",
-        "type": "color"
+      "content": {
+        "muted": {
+          "value": "#f1f1f1",
+          "type": "color"
+        },
+        "default": {
+          "value": "#ffffff",
+          "type": "color"
+        }
       },
-      "default": {
-        "value": "#a2129b",
-        "type": "color"
+      "background": {
+        "light": {
+          "value": "#323232",
+          "type": "color"
+        },
+        "main": {
+          "value": "#121212",
+          "type": "color"
+        }
       },
-      "twitter": {
-        "value": "#0d517b",
-        "type": "color"
+      "base": {
+        "red": {
+          "value": "#e30b5c",
+          "type": "color",
+          "description": "Base red color"
+        }
       }
     },
-    "content": {
-      "muted": {
-        "value": "#f1f1f1",
-        "type": "color"
+    "light": {
+      "link": {
+        "dribbble": {
+          "value": "#be3c6e",
+          "type": "color"
+        },
+        "linkedin": {
+          "value": "#017098",
+          "type": "color"
+        },
+        "default": {
+          "value": "#a2129b",
+          "type": "color"
+        },
+        "twitter": {
+          "value": "#0d517b",
+          "type": "color"
+        }
       },
-      "default": {
-        "value": "#ffffff",
-        "type": "color"
-      }
-    },
-    "background": {
-      "light": {
-        "value": "#cfcfcf",
-        "type": "color"
+      "content": {
+        "muted": {
+          "value": "#f1f1f1",
+          "type": "color"
+        },
+        "default": {
+          "value": "#ffffff",
+          "type": "color"
+        }
       },
-      "main": {
-        "value": "#e8e8e8",
-        "type": "color"
-      }
-    },
-    "base": {
-      "red": {
-        "value": "#9e083f",
-        "type": "color",
-        "description": "Base red color"
+      "background": {
+        "light": {
+          "value": "#cfcfcf",
+          "type": "color"
+        },
+        "main": {
+          "value": "#e8e8e8",
+          "type": "color"
+        }
+      },
+      "base": {
+        "red": {
+          "value": "#9e083f",
+          "type": "color",
+          "description": "Base red color"
+        }
       }
     }
   },

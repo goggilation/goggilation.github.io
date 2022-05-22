@@ -1,18 +1,27 @@
 /**
  * Do not edit directly
- * Generated on Sun, 22 May 2022 18:07:29 GMT
+ * Generated on Sun, 22 May 2022 18:19:36 GMT
  */
 
 :root {
-  --color-link-dribbble: hsl(337, 52%, 49%);
-  --color-link-linkedin: hsl(196, 99%, 30%);
-  --color-link-default: hsl(303, 80%, 35%);
-  --color-link-twitter: hsl(203, 81%, 27%);
-  --color-content-muted: hsl(0, 0%, 95%);
-  --color-content-default: hsl(0, 0%, 100%);
-  --color-background-light: hsl(0, 0%, 81%);
-  --color-background-main: hsl(0, 0%, 91%);
-  --color-base-red: hsl(338, 90%, 33%);
+  --color-dark-link-dribbble: hsl(337, 79%, 61%);
+  --color-dark-link-linkedin: hsl(196, 100%, 43%);
+  --color-dark-link-default: hsl(303, 94%, 56%);
+  --color-dark-link-twitter: hsl(203, 89%, 53%);
+  --color-dark-content-muted: hsl(0, 0%, 95%);
+  --color-dark-content-default: hsl(0, 0%, 100%);
+  --color-dark-background-light: hsl(0, 0%, 20%);
+  --color-dark-background-main: hsl(0, 0%, 7%);
+  --color-dark-base-red: hsl(338, 91%, 47%);
+  --color-light-link-dribbble: hsl(337, 52%, 49%);
+  --color-light-link-linkedin: hsl(196, 99%, 30%);
+  --color-light-link-default: hsl(303, 80%, 35%);
+  --color-light-link-twitter: hsl(203, 81%, 27%);
+  --color-light-content-muted: hsl(0, 0%, 95%);
+  --color-light-content-default: hsl(0, 0%, 100%);
+  --color-light-background-light: hsl(0, 0%, 81%);
+  --color-light-background-main: hsl(0, 0%, 91%);
+  --color-light-base-red: hsl(338, 90%, 33%);
   --font-families-dm-sans: DM Sans;
   --font-families-dm-serif-display: DM Serif Display;
   --line-heights-0: 16;
