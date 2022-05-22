@@ -2,19 +2,19 @@
   "color": {
     "link": {
       "dribbble": {
-        "value": "#EA4C89",
+        "value": "#be3c6e",
         "type": "color"
       },
       "linkedin": {
-        "value": "#00a0dc",
+        "value": "#017098",
         "type": "color"
       },
       "default": {
-        "value": "#f828ee",
+        "value": "#a2129b",
         "type": "color"
       },
       "twitter": {
-        "value": "#1da1f2",
+        "value": "#0d517b",
         "type": "color"
       }
     },
@@ -30,12 +30,19 @@
     },
     "background": {
       "light": {
-        "value": "#323232",
+        "value": "#cfcfcf",
         "type": "color"
       },
       "main": {
-        "value": "#121212",
+        "value": "#e8e8e8",
         "type": "color"
+      }
+    },
+    "base": {
+      "red": {
+        "value": "#9e083f",
+        "type": "color",
+        "description": "Base red color"
       }
     }
   },

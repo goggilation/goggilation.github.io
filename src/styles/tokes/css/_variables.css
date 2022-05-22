@@ -1,17 +1,18 @@
 /**
  * Do not edit directly
- * Generated on Sun, 22 May 2022 17:49:18 GMT
+ * Generated on Sun, 22 May 2022 18:07:29 GMT
  */
 
 :root {
-  --color-link-dribbble: hsl(337, 79%, 61%);
-  --color-link-linkedin: hsl(196, 100%, 43%);
-  --color-link-default: hsl(303, 94%, 56%);
-  --color-link-twitter: hsl(203, 89%, 53%);
+  --color-link-dribbble: hsl(337, 52%, 49%);
+  --color-link-linkedin: hsl(196, 99%, 30%);
+  --color-link-default: hsl(303, 80%, 35%);
+  --color-link-twitter: hsl(203, 81%, 27%);
   --color-content-muted: hsl(0, 0%, 95%);
   --color-content-default: hsl(0, 0%, 100%);
-  --color-background-light: hsl(0, 0%, 20%);
-  --color-background-main: hsl(0, 0%, 7%);
+  --color-background-light: hsl(0, 0%, 81%);
+  --color-background-main: hsl(0, 0%, 91%);
+  --color-base-red: hsl(338, 90%, 33%);
   --font-families-dm-sans: DM Sans;
   --font-families-dm-serif-display: DM Serif Display;
   --line-heights-0: 16;
