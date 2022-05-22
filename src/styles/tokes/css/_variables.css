@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 22 May 2022 18:19:36 GMT
+ * Generated on Sun, 22 May 2022 18:26:12 GMT
  */
 
 :root {
@@ -17,8 +17,8 @@
   --color-light-link-linkedin: hsl(196, 99%, 30%);
   --color-light-link-default: hsl(303, 80%, 35%);
   --color-light-link-twitter: hsl(203, 81%, 27%);
-  --color-light-content-muted: hsl(0, 0%, 95%);
-  --color-light-content-default: hsl(0, 0%, 100%);
+  --color-light-content-muted: hsla(0, 0%, 10%, 0.87);
+  --color-light-content-default: hsla(0, 0%, 10%, 0.92);
   --color-light-background-light: hsl(0, 0%, 81%);
   --color-light-background-main: hsl(0, 0%, 91%);
   --color-light-base-red: hsl(338, 90%, 33%);
