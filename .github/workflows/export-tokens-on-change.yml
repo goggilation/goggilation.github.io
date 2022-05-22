@@ -4,7 +4,7 @@ name: Export Tokens On Input
 on:
   push:
     paths:
-      - "src/tokens/transformed/design-tokens.json"
+      - "src/tokens/base/design-tokens.json"
 
 jobs:
   export_tokens:
