@@ -149,7 +149,7 @@ table {
   --typography-weight-bold: 700;
   --typography-style: normal;
   --typography-family-header: "DM Serif Display", serif;
-  --typography-family-body: "DM Serif Display", sans-serif;
+  --typography-family-body: "DM Sans", sans-serif;
 
   --typography-h1-line-height: 112px;
   --typography-h1-size: 76px;
