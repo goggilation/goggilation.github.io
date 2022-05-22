@@ -69,11 +69,11 @@
         },
         "content": {
           "muted": {
-            "value": "#f1f1f1",
+            "value": "rgba(25,25,25,0.87)",
             "type": "color"
           },
           "default": {
-            "value": "#ffffff",
+            "value": "rgba(25,25,25,0.92)",
             "type": "color"
           }
         },
